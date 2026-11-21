@@ -61,10 +61,11 @@ class WindowsLiveTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'version'):LongshotReader().read_metrics(name,None,sys.executable)
         with self.assertRaises(ValueError):NamedPipe(r'\\remote\pipe\untrusted')
     def test_process_memory_samples_without_saves(self):
-        from windows_native import ProcessMemory
+        from windows_native import ProcessMemory,find_process
         from adapters.pokopia_live import Sampler
         p,line=self.start_child('memory')
         probes=[(a,bytes.fromhex(b)) for a,b in json.loads(line)['probes']]
+        with self.assertRaisesRegex(ValueError,'exactly one'):find_process(sys.executable)
         memory=ProcessMemory(p.pid,sys.executable);self.addCleanup(memory.close)
         sampler=Sampler()
         with self.assertRaisesRegex(ValueError,'two stable'):sampler.sample(memory.read,probes,now=1)
@@ -83,7 +84,7 @@ class WindowsLiveTests(unittest.TestCase):
             main=Path(tmp)/'main';main.write_bytes(b'fixture')
             manifest={'windowsExe':sys.executable,'windowsMain':str(main)}
             reader=LiveReader()
-            with patch('windows_native.find_process',return_value=p.pid),patch('adapters.pokopia_windows.nso_probes',return_value=probes):
+            with patch('windows_native.find_process',return_value=p.pid),patch('adapters.pokopia_windows.nso_probes',return_value=probes),patch('adapters.pokopia_live.time.monotonic',side_effect=[1,2]):
                 with self.assertRaises(ValueError):reader.read_metrics(manifest)
                 self.assertEqual(reader.read_metrics(manifest)['dex'],0)
             with patch('windows_native.find_process',side_effect=ValueError('exited')):

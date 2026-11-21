@@ -2,9 +2,9 @@
 
 ## Download
 
-Ready-to-install [Windows x64](https://github.com/patryk405/custom-steam-achievements/releases/download/v0.6.0/custom-steam-achievements-windows-x64.zip) and [Linux x64](https://github.com/patryk405/custom-steam-achievements/releases/download/v0.6.0/custom-steam-achievements-linux-x64.zip) packages include the plugin, standalone tracker and a native game setup window. No Python or Bun installation is needed. Install [Millennium](https://steambrew.app/) first, close Steam, extract the ZIP, and run `Install.cmd` (Windows) or `bash install-linux.sh` (Linux).
+Ready-to-install [Windows x64](https://github.com/patryk405/custom-steam-achievements/releases/download/v0.7.0/custom-steam-achievements-windows-x64.zip) and [Linux x64](https://github.com/patryk405/custom-steam-achievements/releases/download/v0.7.0/custom-steam-achievements-linux-x64.zip) packages include the plugin, standalone tracker and a native game setup window. No Python or Bun installation is needed. Install [Millennium](https://steambrew.app/) first, close Steam, extract the ZIP, and run `Install.cmd` (Windows) or `bash install-linux.sh` (Linux).
 
-See [package instructions and compatibility](packaging/README.txt). Windows is experimental; live Ocarina/Pokopia adapters currently require Linux. Open each supported game's library page once to connect notifications. Updates preserve progress. [Plugin only](https://github.com/patryk405/custom-steam-achievements/releases/download/v0.6.0/local.custom-achievements.star) requires a separately running tracker.
+See [package instructions and compatibility](packaging/README.txt). Windows is experimental; live Ocarina/Pokopia adapters now include native Windows support, pending gameplay verification. See [Windows live setup](docs/WINDOWS-LIVE.md). Open each supported game's library page once to connect notifications. Updates preserve progress. [Plugin only](https://github.com/patryk405/custom-steam-achievements/releases/download/v0.7.0/local.custom-achievements.star) requires a separately running tracker.
 
 Builds run on Windows and Ubuntu 22.04; the executable resource/lock smoke tests must pass before release publication. This does not replace gameplay testing on each supported runtime.
 
