@@ -6,11 +6,12 @@ import json
 import struct
 import zlib
 from pathlib import Path
+from platform_support import resource_directory
 from .bbport import bounded
 
 SIZE = 0x470CED
 HEADER = 0x130
-LAYOUT = json.loads((Path(__file__).resolve().parents[2]/'resources/pokopia-layout.json').read_text())
+LAYOUT = json.loads((resource_directory()/'resources/pokopia-layout.json').read_text())
 
 
 def parse(raw):
