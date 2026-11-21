@@ -1,0 +1,4 @@
+import logo from '@/lib/brand/logo.png?url';
+export default function SiteHeader({active,onGuide}:{active:'home'|'library'|'account';onGuide?:()=>void}){
+return <header className="app-header"><div className="header-inner"><a href="/" className="brand"><img className="brand-logo" src={logo} alt="" width="36" height="36"/>Custom Steam Achievements</a><nav aria-label="Main navigation"><a href="/" className={active==='home'?'active':''} aria-current={active==='home'?'page':undefined}>HOME</a><a href="/library" className={active==='library'?'active':''} aria-current={active==='library'?'page':undefined}>LIBRARY</a>{onGuide?<button onClick={onGuide}>CREATOR GUIDE</button>:<a href="/#installation">INSTALLATION</a>}<a href="/account" className={active==='account'?'active':''}>STEAM ACCOUNT</a></nav><a className="corner-logo" href="/" aria-label="Custom Steam Achievements home"><img src={logo} alt="Custom Steam Achievements logo" width="34" height="34"/></a></div></header>
+}

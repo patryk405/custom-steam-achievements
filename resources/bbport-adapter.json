@@ -1,0 +1,332 @@
+{
+  "schema": 1,
+  "id": "bbport-trophies-v1",
+  "game": "bloodborne",
+  "kind": "bbport-trophies",
+  "root": "",
+  "titleId": "",
+  "trophies": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39"
+  ],
+  "rules": {
+    "bb_trophy_0": {
+      "op": "any",
+      "flags": [
+        "trophy:0"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_1": {
+      "op": "any",
+      "flags": [
+        "trophy:1"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_2": {
+      "op": "any",
+      "flags": [
+        "trophy:2"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_3": {
+      "op": "any",
+      "flags": [
+        "trophy:3"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_4": {
+      "op": "any",
+      "flags": [
+        "trophy:4"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_5": {
+      "op": "any",
+      "flags": [
+        "trophy:5"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_6": {
+      "op": "any",
+      "flags": [
+        "trophy:6"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_7": {
+      "op": "any",
+      "flags": [
+        "trophy:7"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_8": {
+      "op": "any",
+      "flags": [
+        "trophy:8"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_9": {
+      "op": "any",
+      "flags": [
+        "trophy:9"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_10": {
+      "op": "any",
+      "flags": [
+        "trophy:10"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_11": {
+      "op": "any",
+      "flags": [
+        "trophy:11"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_12": {
+      "op": "any",
+      "flags": [
+        "trophy:12"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_13": {
+      "op": "any",
+      "flags": [
+        "trophy:13"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_14": {
+      "op": "any",
+      "flags": [
+        "trophy:14"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_15": {
+      "op": "any",
+      "flags": [
+        "trophy:15"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_16": {
+      "op": "any",
+      "flags": [
+        "trophy:16"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_17": {
+      "op": "any",
+      "flags": [
+        "trophy:17"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_18": {
+      "op": "any",
+      "flags": [
+        "trophy:18"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_19": {
+      "op": "any",
+      "flags": [
+        "trophy:19"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_20": {
+      "op": "any",
+      "flags": [
+        "trophy:20"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_21": {
+      "op": "any",
+      "flags": [
+        "trophy:21"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_22": {
+      "op": "any",
+      "flags": [
+        "trophy:22"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_23": {
+      "op": "any",
+      "flags": [
+        "trophy:23"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_24": {
+      "op": "any",
+      "flags": [
+        "trophy:24"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_25": {
+      "op": "any",
+      "flags": [
+        "trophy:25"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_26": {
+      "op": "any",
+      "flags": [
+        "trophy:26"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_27": {
+      "op": "any",
+      "flags": [
+        "trophy:27"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_28": {
+      "op": "any",
+      "flags": [
+        "trophy:28"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_29": {
+      "op": "any",
+      "flags": [
+        "trophy:29"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_30": {
+      "op": "any",
+      "flags": [
+        "trophy:30"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_31": {
+      "op": "any",
+      "flags": [
+        "trophy:31"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_32": {
+      "op": "any",
+      "flags": [
+        "trophy:32"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_33": {
+      "op": "any",
+      "flags": [
+        "trophy:33"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_34": {
+      "op": "any",
+      "flags": [
+        "trophy:34"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_35": {
+      "op": "any",
+      "flags": [
+        "trophy:35"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_36": {
+      "op": "any",
+      "flags": [
+        "trophy:36"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_37": {
+      "op": "any",
+      "flags": [
+        "trophy:37"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_38": {
+      "op": "any",
+      "flags": [
+        "trophy:38"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_39": {
+      "op": "any",
+      "flags": [
+        "trophy:39"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    }
+  }
+}

@@ -1,0 +1,574 @@
+{
+  "schema": 1,
+  "id": "bloodborne-collection",
+  "title": "Bloodborne: The Complete Hunt",
+  "game": "bloodborne",
+  "version": "0.3.0",
+  "author": "Custom Steam Achievements",
+  "description": "40 native trophies: 34 base-game and 6 Old Hunters. BBPort event journal required. Fixture-tested; real-game verification pending.",
+  "source": "https://github.com/deadinside28/bloodborne_pc",
+  "achievements": [
+    {
+      "id": "bb_trophy_0",
+      "name": "Bloodborne",
+      "description": "Unlock the other 33 base-game trophies.",
+      "target": 1,
+      "icon": "crown"
+    },
+    {
+      "id": "bb_trophy_1",
+      "name": "Yharnam Sunrise",
+      "description": "Reach the ending where the hunter leaves the dream.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "bb_trophy_2",
+      "name": "Honoring Wishes",
+      "description": "Reach the ending where the hunter replaces Gehrman.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "bb_trophy_3",
+      "name": "Childhood's Beginning",
+      "description": "Reach the ending where the hunter becomes a Great One.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "bb_trophy_4",
+      "name": "Yharnam, Pthumerian Queen",
+      "description": "Overcome the queen at the end of the Pthumerian chalice route.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "bb_trophy_5",
+      "name": "Hunter's Essence",
+      "description": "Complete the collection of base-game hunter weapons.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "bb_trophy_6",
+      "name": "Hunter's Craft",
+      "description": "Complete the collection of base-game hunter tools.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "bb_trophy_7",
+      "name": "Weapon Master",
+      "description": "Upgrade any weapon to its maximum level.",
+      "target": 1,
+      "icon": "shield"
+    },
+    {
+      "id": "bb_trophy_8",
+      "name": "Blood Gem Master",
+      "description": "Find a top-tier blood gem.",
+      "target": 1,
+      "icon": "shield"
+    },
+    {
+      "id": "bb_trophy_9",
+      "name": "Rune Master",
+      "description": "Find a top-tier Caryll rune.",
+      "target": 1,
+      "icon": "shield"
+    },
+    {
+      "id": "bb_trophy_10",
+      "name": "Cainhurst",
+      "description": "Enter the abandoned Cainhurst castle.",
+      "target": 1,
+      "icon": "shield"
+    },
+    {
+      "id": "bb_trophy_11",
+      "name": "The Choir",
+      "description": "Reach the Choir’s territory.",
+      "target": 1,
+      "icon": "shield"
+    },
+    {
+      "id": "bb_trophy_12",
+      "name": "The Source of the Dream",
+      "description": "Find the workshop that inspired the dream.",
+      "target": 1,
+      "icon": "shield"
+    },
+    {
+      "id": "bb_trophy_13",
+      "name": "Nightmare Lecture Building",
+      "description": "Enter the nightmare lecture hall.",
+      "target": 1,
+      "icon": "shield"
+    },
+    {
+      "id": "bb_trophy_14",
+      "name": "Father Gascoigne",
+      "description": "Win the boss encounter with Father Gascoigne.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_15",
+      "name": "Vicar Amelia",
+      "description": "Win the boss encounter with Vicar Amelia.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_16",
+      "name": "Shadow of Yharnam",
+      "description": "Win the boss encounter with Shadow of Yharnam.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_17",
+      "name": "Rom, the Vacuous Spider",
+      "description": "Win the boss encounter with Rom, the Vacuous Spider.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_18",
+      "name": "The One Reborn",
+      "description": "Win the boss encounter with The One Reborn.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_19",
+      "name": "Micolash, Host of the Nightmare",
+      "description": "Win the boss encounter with Micolash, Host of the Nightmare.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_20",
+      "name": "Mergo's Wet Nurse",
+      "description": "Win the boss encounter with Mergo's Wet Nurse.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_21",
+      "name": "Cleric Beast",
+      "description": "Win the boss encounter with Cleric Beast.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_22",
+      "name": "Blood-starved Beast",
+      "description": "Win the boss encounter with Blood-starved Beast.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_23",
+      "name": "The Witch of Hemwick",
+      "description": "Win the boss encounter with The Witch of Hemwick.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_24",
+      "name": "Darkbeast Paarl",
+      "description": "Win the boss encounter with Darkbeast Paarl.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_25",
+      "name": "Amygdala",
+      "description": "Win the boss encounter with Amygdala.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_26",
+      "name": "Martyr Logarius",
+      "description": "Win the boss encounter with Martyr Logarius.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_27",
+      "name": "Celestial Emissary",
+      "description": "Win the boss encounter with Celestial Emissary.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_28",
+      "name": "Ebrietas, Daughter of the Cosmos",
+      "description": "Win the boss encounter with Ebrietas, Daughter of the Cosmos.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_29",
+      "name": "Blood Gem Contact",
+      "description": "Find your first weapon blood gem.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_30",
+      "name": "Rune Contact",
+      "description": "Find your first Caryll rune.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_31",
+      "name": "Chalice of Pthumeru",
+      "description": "Obtain the key chalice for Pthumeru.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_32",
+      "name": "Chalice of Ailing Loran",
+      "description": "Obtain the key chalice for Ailing Loran.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_33",
+      "name": "Chalice of Isz",
+      "description": "Obtain the key chalice for Isz.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_34",
+      "name": "Old Hunter's Essence",
+      "description": "Complete the expansion’s hunter weapon collection.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "bb_trophy_35",
+      "name": "Orphan of Kos",
+      "description": "Win the expansion boss encounter with Orphan of Kos.",
+      "target": 1,
+      "icon": "shield"
+    },
+    {
+      "id": "bb_trophy_36",
+      "name": "Ludwig, the Holy Blade",
+      "description": "Win the expansion boss encounter with Ludwig, the Holy Blade.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_37",
+      "name": "Lady Maria of the Astral Clocktower",
+      "description": "Win the expansion boss encounter with Lady Maria of the Astral Clocktower.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_38",
+      "name": "Living Failures",
+      "description": "Win the expansion boss encounter with Living Failures.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "bb_trophy_39",
+      "name": "Laurence, the First Vicar",
+      "description": "Win the expansion boss encounter with Laurence, the First Vicar.",
+      "target": 1,
+      "icon": "sword"
+    }
+  ],
+  "rules": {
+    "bb_trophy_0": {
+      "op": "any",
+      "flags": [
+        "trophy:0"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_1": {
+      "op": "any",
+      "flags": [
+        "trophy:1"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_2": {
+      "op": "any",
+      "flags": [
+        "trophy:2"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_3": {
+      "op": "any",
+      "flags": [
+        "trophy:3"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_4": {
+      "op": "any",
+      "flags": [
+        "trophy:4"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_5": {
+      "op": "any",
+      "flags": [
+        "trophy:5"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_6": {
+      "op": "any",
+      "flags": [
+        "trophy:6"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_7": {
+      "op": "any",
+      "flags": [
+        "trophy:7"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_8": {
+      "op": "any",
+      "flags": [
+        "trophy:8"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_9": {
+      "op": "any",
+      "flags": [
+        "trophy:9"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_10": {
+      "op": "any",
+      "flags": [
+        "trophy:10"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_11": {
+      "op": "any",
+      "flags": [
+        "trophy:11"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_12": {
+      "op": "any",
+      "flags": [
+        "trophy:12"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_13": {
+      "op": "any",
+      "flags": [
+        "trophy:13"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_14": {
+      "op": "any",
+      "flags": [
+        "trophy:14"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_15": {
+      "op": "any",
+      "flags": [
+        "trophy:15"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_16": {
+      "op": "any",
+      "flags": [
+        "trophy:16"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_17": {
+      "op": "any",
+      "flags": [
+        "trophy:17"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_18": {
+      "op": "any",
+      "flags": [
+        "trophy:18"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_19": {
+      "op": "any",
+      "flags": [
+        "trophy:19"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_20": {
+      "op": "any",
+      "flags": [
+        "trophy:20"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_21": {
+      "op": "any",
+      "flags": [
+        "trophy:21"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_22": {
+      "op": "any",
+      "flags": [
+        "trophy:22"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_23": {
+      "op": "any",
+      "flags": [
+        "trophy:23"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_24": {
+      "op": "any",
+      "flags": [
+        "trophy:24"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_25": {
+      "op": "any",
+      "flags": [
+        "trophy:25"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_26": {
+      "op": "any",
+      "flags": [
+        "trophy:26"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_27": {
+      "op": "any",
+      "flags": [
+        "trophy:27"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_28": {
+      "op": "any",
+      "flags": [
+        "trophy:28"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_29": {
+      "op": "any",
+      "flags": [
+        "trophy:29"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_30": {
+      "op": "any",
+      "flags": [
+        "trophy:30"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_31": {
+      "op": "any",
+      "flags": [
+        "trophy:31"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_32": {
+      "op": "any",
+      "flags": [
+        "trophy:32"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_33": {
+      "op": "any",
+      "flags": [
+        "trophy:33"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_34": {
+      "op": "any",
+      "flags": [
+        "trophy:34"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_35": {
+      "op": "any",
+      "flags": [
+        "trophy:35"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_36": {
+      "op": "any",
+      "flags": [
+        "trophy:36"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_37": {
+      "op": "any",
+      "flags": [
+        "trophy:37"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_38": {
+      "op": "any",
+      "flags": [
+        "trophy:38"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    },
+    "bb_trophy_39": {
+      "op": "any",
+      "flags": [
+        "trophy:39"
+      ],
+      "note": "Detected from the BBPort trophy journal."
+    }
+  }
+}

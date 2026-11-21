@@ -1,0 +1,556 @@
+{
+  "schema": 1,
+  "id": "longshot-live-v1",
+  "game": "oot",
+  "kind": "longshot-live",
+  "socket": "${XDG_DATA_HOME}/custom-achievements/longshot.sock",
+  "rules": {
+    "oot_first_steps": {
+      "op": "number",
+      "flags": [
+        "live:distance"
+      ],
+      "threshold": 5,
+      "note": "Walk 5 metres in one session. Loading and teleports do not count."
+    },
+    "oot_pocket_change": {
+      "op": "number",
+      "flags": [
+        "rupees"
+      ],
+      "threshold": 1,
+      "note": "Have at least 1 Rupee; an existing wallet balance also counts."
+    },
+    "oot_emerald": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Stone_Forest"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_ruby": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Stone_Fire"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_sapphire": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Stone_Water"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_medal_light": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Medal_Light"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_medal_forest": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Medal_Forest"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_medal_fire": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Medal_Fire"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_medal_water": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Medal_Water"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_medal_shadow": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Medal_Shadow"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_medal_spirit": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Medal_Spirit"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_kokiri_sword": {
+      "op": "all",
+      "flags": [
+        "IsGet.Weapon_Sword_Kokiri"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_master_sword": {
+      "op": "all",
+      "flags": [
+        "IsGet.Weapon_Sword_Master"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_biggoron": {
+      "op": "all",
+      "flags": [
+        "IsGet.Weapon_Sword_Biggoron"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_deku_shield": {
+      "op": "all",
+      "flags": [
+        "IsGet.Weapon_Shield_Deku"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_mirror": {
+      "op": "all",
+      "flags": [
+        "IsGet.Weapon_Shield_Mirror"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_slingshot": {
+      "op": "all",
+      "flags": [
+        "IsGet.Weapon_Range_SlingShot"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_bombs": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_BombBag_Small"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_boomerang": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Boomerang"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_bow": {
+      "op": "all",
+      "flags": [
+        "IsGet.Weapon_Range_Bow"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_hookshot": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Hookshot"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_longshot": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Longshot"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_hammer": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Hammer"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_lens": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_GlassTruth"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_iron_boots": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_Adult_HeavyBoot"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_hover_boots": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_Adult_HoverBoot"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_goron_tunic": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_Adult_Goron"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_zora_tunic": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_Adult_Zora"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_silver_gauntlets": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_Adult_Gauntlet_Silver"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_gold_gauntlets": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_Adult_Gauntlet_Gold"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_fire_arrow": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Arrow_Fire"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_ice_arrow": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Arrow_Ice"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_light_arrow": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Arrow_Light"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_ocarina": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Ocarina_Time"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_zeldalullaby": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_ZeldaLullaby"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_eponasong": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_EponaSong"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_sariasong": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_SariaSong"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_sunsong": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_SunSong"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_timesong": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_TimeSong"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_stormsong": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_StormSong"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_forestminuet": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_ForestMinuet"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_firebolero": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_FireBolero"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_waterserenade": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_WaterSerenade"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_shadownocturne": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_ShadowNocturne"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_spiritrequiem": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_SpiritRequiem"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_lightprelude": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_LightPrelude"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_din": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_DinFire"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_farore": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_FaroreWind"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_nayru": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_NayruLove"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_magic": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_FairyBless_MP"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_double_magic": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_FairyBless_MPDouble"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_defense": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_FairyBless_DefenseDouble"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_truth": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_Child_Mask_Truth"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_gerudo": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Token_Gerudo"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_wallet": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Wallet_Large"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_skulltulas_1": {
+      "op": "number",
+      "flags": [
+        "PouchData.Item_Token_Gold.StockNum"
+      ],
+      "note": "Detected live from Longshot game progress.",
+      "threshold": 1
+    },
+    "oot_skulltulas_10": {
+      "op": "number",
+      "flags": [
+        "PouchData.Item_Token_Gold.StockNum"
+      ],
+      "note": "Detected live from Longshot game progress.",
+      "threshold": 10
+    },
+    "oot_skulltulas_30": {
+      "op": "number",
+      "flags": [
+        "PouchData.Item_Token_Gold.StockNum"
+      ],
+      "note": "Detected live from Longshot game progress.",
+      "threshold": 30
+    },
+    "oot_skulltulas_50": {
+      "op": "number",
+      "flags": [
+        "PouchData.Item_Token_Gold.StockNum"
+      ],
+      "note": "Detected live from Longshot game progress.",
+      "threshold": 50
+    },
+    "oot_skulltulas_100": {
+      "op": "number",
+      "flags": [
+        "PouchData.Item_Token_Gold.StockNum"
+      ],
+      "note": "Detected live from Longshot game progress.",
+      "threshold": 100
+    },
+    "oot_hearts_10": {
+      "op": "number",
+      "flags": [
+        "max_life"
+      ],
+      "note": "Detected live from Longshot game progress.",
+      "threshold": 40
+    },
+    "oot_hearts_20": {
+      "op": "number",
+      "flags": [
+        "max_life"
+      ],
+      "note": "Detected live from Longshot game progress.",
+      "threshold": 80
+    },
+    "oot_three_stones": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Stone_Forest",
+        "IsGet.Item_Stone_Fire",
+        "IsGet.Item_Stone_Water"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_six_medals": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Medal_Light",
+        "IsGet.Item_Medal_Forest",
+        "IsGet.Item_Medal_Fire",
+        "IsGet.Item_Medal_Water",
+        "IsGet.Item_Medal_Shadow",
+        "IsGet.Item_Medal_Spirit"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_all_songs": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_ZeldaLullaby",
+        "IsGet.Item_Melody_EponaSong",
+        "IsGet.Item_Melody_SariaSong",
+        "IsGet.Item_Melody_SunSong",
+        "IsGet.Item_Melody_TimeSong",
+        "IsGet.Item_Melody_StormSong",
+        "IsGet.Item_Melody_ForestMinuet",
+        "IsGet.Item_Melody_FireBolero",
+        "IsGet.Item_Melody_WaterSerenade",
+        "IsGet.Item_Melody_ShadowNocturne",
+        "IsGet.Item_Melody_SpiritRequiem",
+        "IsGet.Item_Melody_LightPrelude"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_three_spells": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_DinFire",
+        "IsGet.Item_FaroreWind",
+        "IsGet.Item_NayruLove"
+      ],
+      "note": "Detected live from Longshot game progress."
+    }
+  },
+  "watch": {
+    "IsGet.Item_Stone_Forest": "0x110b83ec",
+    "IsGet.Item_Stone_Fire": "0x8908d6ad",
+    "IsGet.Item_Stone_Water": "0xeec383f5",
+    "IsGet.Item_Medal_Light": "0x9026c187",
+    "IsGet.Item_Medal_Forest": "0xfcd8d653",
+    "IsGet.Item_Medal_Fire": "0x103a0dc7",
+    "IsGet.Item_Medal_Water": "0xcf64e780",
+    "IsGet.Item_Medal_Shadow": "0x12d63ac6",
+    "IsGet.Item_Medal_Spirit": "0xe269df38",
+    "IsGet.Weapon_Sword_Kokiri": "0x405d8a0f",
+    "IsGet.Weapon_Sword_Master": "0x7ae38e5b",
+    "IsGet.Weapon_Sword_Biggoron": "0x33466812",
+    "IsGet.Weapon_Shield_Deku": "0x5217da1e",
+    "IsGet.Weapon_Shield_Mirror": "0x75e94e42",
+    "IsGet.Weapon_Range_SlingShot": "0x0ec22ee1",
+    "IsGet.Item_BombBag_Small": "0xa63f1e2d",
+    "IsGet.Item_Boomerang": "0x7f4ce38d",
+    "IsGet.Weapon_Range_Bow": "0x69ec28be",
+    "IsGet.Item_Hookshot": "0xff98ed58",
+    "IsGet.Item_Longshot": "0x38aea3bb",
+    "IsGet.Item_Hammer": "0x7227efd8",
+    "IsGet.Armor_GlassTruth": "0x7fe2a5b2",
+    "IsGet.Armor_Adult_HeavyBoot": "0x5fa190e6",
+    "IsGet.Armor_Adult_HoverBoot": "0x1109c920",
+    "IsGet.Armor_Adult_Goron": "0xae5611af",
+    "IsGet.Armor_Adult_Zora": "0x4f5a929c",
+    "IsGet.Armor_Adult_Gauntlet_Silver": "0x87e58de3",
+    "IsGet.Armor_Adult_Gauntlet_Gold": "0x3ef15ec4",
+    "IsGet.Item_Arrow_Fire": "0x4db7eae0",
+    "IsGet.Item_Arrow_Ice": "0x5c8f3099",
+    "IsGet.Item_Arrow_Light": "0x8637bab4",
+    "IsGet.Item_Ocarina_Time": "0x1da2c511",
+    "IsGet.Item_Melody_ZeldaLullaby": "0x01c20002",
+    "IsGet.Item_Melody_EponaSong": "0xb492ac33",
+    "IsGet.Item_Melody_SariaSong": "0xd3f8bfcc",
+    "IsGet.Item_Melody_SunSong": "0x165dd1ad",
+    "IsGet.Item_Melody_TimeSong": "0x03b3450e",
+    "IsGet.Item_Melody_StormSong": "0x2b39dd4f",
+    "IsGet.Item_Melody_ForestMinuet": "0xdc0a0b54",
+    "IsGet.Item_Melody_FireBolero": "0x49041ab9",
+    "IsGet.Item_Melody_WaterSerenade": "0x3fa63986",
+    "IsGet.Item_Melody_ShadowNocturne": "0xc2fb95f4",
+    "IsGet.Item_Melody_SpiritRequiem": "0x802a36a8",
+    "IsGet.Item_Melody_LightPrelude": "0xd6320ba4",
+    "IsGet.Item_DinFire": "0xfa04e611",
+    "IsGet.Item_FaroreWind": "0xffabf058",
+    "IsGet.Item_NayruLove": "0x00b44241",
+    "IsGet.Item_FairyBless_MP": "0xb1309073",
+    "IsGet.Item_FairyBless_MPDouble": "0x87ca4826",
+    "IsGet.Item_FairyBless_DefenseDouble": "0x944b78be",
+    "IsGet.Armor_Child_Mask_Truth": "0xf7d5bd9c",
+    "IsGet.Item_Token_Gerudo": "0x0e6264c7",
+    "IsGet.Item_Wallet_Large": "0xb5031190",
+    "PouchData.Item_Token_Gold.StockNum": "0x04735978"
+  }
+}

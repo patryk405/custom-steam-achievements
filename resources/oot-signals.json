@@ -1,0 +1,330 @@
+{
+  "gameData": "GameDataList.Product.110",
+  "build": "v3.0.0 (source bd6a0cdd)",
+  "signals": {
+    "IsGet.Item_Stone_Forest": {
+      "hash": "0x110b83ec",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Stone_Fire": {
+      "hash": "0x8908d6ad",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Stone_Water": {
+      "hash": "0xeec383f5",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Medal_Light": {
+      "hash": "0x9026c187",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Medal_Forest": {
+      "hash": "0xfcd8d653",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Medal_Fire": {
+      "hash": "0x103a0dc7",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Medal_Water": {
+      "hash": "0xcf64e780",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Medal_Shadow": {
+      "hash": "0x12d63ac6",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Medal_Spirit": {
+      "hash": "0xe269df38",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Weapon_Sword_Kokiri": {
+      "hash": "0x405d8a0f",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Weapon_Sword_Master": {
+      "hash": "0x7ae38e5b",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Weapon_Sword_Biggoron": {
+      "hash": "0x33466812",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Weapon_Shield_Deku": {
+      "hash": "0x5217da1e",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Weapon_Shield_Mirror": {
+      "hash": "0x75e94e42",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Weapon_Range_SlingShot": {
+      "hash": "0x0ec22ee1",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_BombBag_Small": {
+      "hash": "0xa63f1e2d",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Boomerang": {
+      "hash": "0x7f4ce38d",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Weapon_Range_Bow": {
+      "hash": "0x69ec28be",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Hookshot": {
+      "hash": "0xff98ed58",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Longshot": {
+      "hash": "0x38aea3bb",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Hammer": {
+      "hash": "0x7227efd8",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Armor_GlassTruth": {
+      "hash": "0x7fe2a5b2",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Armor_Adult_HeavyBoot": {
+      "hash": "0x5fa190e6",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Armor_Adult_HoverBoot": {
+      "hash": "0x1109c920",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Armor_Adult_Goron": {
+      "hash": "0xae5611af",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Armor_Adult_Zora": {
+      "hash": "0x4f5a929c",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Armor_Adult_Gauntlet_Silver": {
+      "hash": "0x87e58de3",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Armor_Adult_Gauntlet_Gold": {
+      "hash": "0x3ef15ec4",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Arrow_Fire": {
+      "hash": "0x4db7eae0",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Arrow_Ice": {
+      "hash": "0x5c8f3099",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Arrow_Light": {
+      "hash": "0x8637bab4",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Ocarina_Time": {
+      "hash": "0x1da2c511",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Melody_ZeldaLullaby": {
+      "hash": "0x01c20002",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Melody_EponaSong": {
+      "hash": "0xb492ac33",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Melody_SariaSong": {
+      "hash": "0xd3f8bfcc",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Melody_SunSong": {
+      "hash": "0x165dd1ad",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Melody_TimeSong": {
+      "hash": "0x03b3450e",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Melody_StormSong": {
+      "hash": "0x2b39dd4f",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Melody_ForestMinuet": {
+      "hash": "0xdc0a0b54",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Melody_FireBolero": {
+      "hash": "0x49041ab9",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Melody_WaterSerenade": {
+      "hash": "0x3fa63986",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Melody_ShadowNocturne": {
+      "hash": "0xc2fb95f4",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Melody_SpiritRequiem": {
+      "hash": "0x802a36a8",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Melody_LightPrelude": {
+      "hash": "0xd6320ba4",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_DinFire": {
+      "hash": "0xfa04e611",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_FaroreWind": {
+      "hash": "0xffabf058",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_NayruLove": {
+      "hash": "0x00b44241",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_FairyBless_MP": {
+      "hash": "0xb1309073",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_FairyBless_MPDouble": {
+      "hash": "0x87ca4826",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_FairyBless_DefenseDouble": {
+      "hash": "0x944b78be",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Armor_Child_Mask_Truth": {
+      "hash": "0xf7d5bd9c",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Token_Gerudo": {
+      "hash": "0x0e6264c7",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "IsGet.Item_Wallet_Large": {
+      "hash": "0xb5031190",
+      "type": "Bool",
+      "default": false,
+      "saveFileIndex": 0
+    },
+    "PouchData.Item_Token_Gold.StockNum": {
+      "hash": "0x04735978",
+      "type": "Int",
+      "default": 0,
+      "saveFileIndex": 0
+    }
+  }
+}

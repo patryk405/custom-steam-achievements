@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "oot-json-example",
+  "game": "oot",
+  "kind": "json-snapshot",
+  "root": "${XDG_DATA_HOME}/custom-achievements/incoming/oot",
+  "glob": "progress.json",
+  "rules": {
+    "deku": {"op": "any", "flags": ["deku_tree_completed"]},
+    "stones": {"op": "number", "flags": ["spiritual_stones"], "threshold": 3}
+  }
+}

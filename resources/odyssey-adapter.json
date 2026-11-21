@@ -1,0 +1,290 @@
+{
+  "schema": 1,
+  "id": "odyssey-v1",
+  "game": "odyssey",
+  "kind": "odyssey-save",
+  "root": "",
+  "glob": "File1.bin",
+  "rules": {
+    "odyssey_kingdom_0": {
+      "op": "any",
+      "flags": [
+        "kingdom:0"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_0": {
+      "op": "number",
+      "flags": [
+        "moons:0"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_1": {
+      "op": "any",
+      "flags": [
+        "kingdom:1"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_1": {
+      "op": "number",
+      "flags": [
+        "moons:1"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_2": {
+      "op": "any",
+      "flags": [
+        "kingdom:2"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_2": {
+      "op": "number",
+      "flags": [
+        "moons:2"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_3": {
+      "op": "any",
+      "flags": [
+        "kingdom:3"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_3": {
+      "op": "number",
+      "flags": [
+        "moons:3"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_4": {
+      "op": "any",
+      "flags": [
+        "kingdom:4"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_4": {
+      "op": "number",
+      "flags": [
+        "moons:4"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_5": {
+      "op": "any",
+      "flags": [
+        "kingdom:5"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_6": {
+      "op": "any",
+      "flags": [
+        "kingdom:6"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_6": {
+      "op": "number",
+      "flags": [
+        "moons:6"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_7": {
+      "op": "any",
+      "flags": [
+        "kingdom:7"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_7": {
+      "op": "number",
+      "flags": [
+        "moons:7"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_8": {
+      "op": "any",
+      "flags": [
+        "kingdom:8"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_8": {
+      "op": "number",
+      "flags": [
+        "moons:8"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_9": {
+      "op": "any",
+      "flags": [
+        "kingdom:9"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_9": {
+      "op": "number",
+      "flags": [
+        "moons:9"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_10": {
+      "op": "any",
+      "flags": [
+        "kingdom:10"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_10": {
+      "op": "number",
+      "flags": [
+        "moons:10"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_11": {
+      "op": "any",
+      "flags": [
+        "kingdom:11"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_12": {
+      "op": "any",
+      "flags": [
+        "kingdom:12"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_12": {
+      "op": "number",
+      "flags": [
+        "moons:12"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_13": {
+      "op": "any",
+      "flags": [
+        "kingdom:13"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_13": {
+      "op": "number",
+      "flags": [
+        "moons:13"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_14": {
+      "op": "any",
+      "flags": [
+        "kingdom:14"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_14": {
+      "op": "number",
+      "flags": [
+        "moons:14"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_total_1": {
+      "op": "number",
+      "flags": [
+        "moons"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_total_10": {
+      "op": "number",
+      "flags": [
+        "moons"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_total_50": {
+      "op": "number",
+      "flags": [
+        "moons"
+      ],
+      "threshold": 50,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_total_100": {
+      "op": "number",
+      "flags": [
+        "moons"
+      ],
+      "threshold": 100,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_total_250": {
+      "op": "number",
+      "flags": [
+        "moons"
+      ],
+      "threshold": 250,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_total_500": {
+      "op": "number",
+      "flags": [
+        "moons"
+      ],
+      "threshold": 500,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_total_999": {
+      "op": "number",
+      "flags": [
+        "moons"
+      ],
+      "threshold": 999,
+      "note": "Detected after the game saves or autosaves."
+    }
+  }
+}

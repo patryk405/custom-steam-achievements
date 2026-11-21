@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "pokopia-save-v1",
+  "game": "pokopia",
+  "kind": "pokopia-save",
+  "root": "",
+  "glob": "CMNDAT.BIN",
+  "rules": {
+    "pokopia_first_friend": {
+      "op": "number",
+      "flags": [
+        "dex"
+      ],
+      "threshold": 1,
+      "note": "Experimental live memory tracking for Recompia / Pokopia 2.0.1. Requires the CSA launch wrapper; no mod or save needed."
+    },
+    "pokopia_growing_community": {
+      "op": "number",
+      "flags": [
+        "dex"
+      ],
+      "threshold": 25,
+      "note": "Experimental live memory tracking for Recompia / Pokopia 2.0.1. Requires the CSA launch wrapper; no mod or save needed."
+    },
+    "pokopia_bustling_island": {
+      "op": "number",
+      "flags": [
+        "dex"
+      ],
+      "threshold": 100,
+      "note": "Experimental live memory tracking for Recompia / Pokopia 2.0.1. Requires the CSA launch wrapper; no mod or save needed."
+    },
+    "pokopia_full_house": {
+      "op": "number",
+      "flags": [
+        "dex"
+      ],
+      "threshold": 150,
+      "note": "Experimental live memory tracking for Recompia / Pokopia 2.0.1. Requires the CSA launch wrapper; no mod or save needed."
+    },
+    "pokopia_first_habitat": {
+      "op": "number",
+      "flags": [
+        "habitats"
+      ],
+      "threshold": 1,
+      "note": "Experimental live memory tracking for Recompia / Pokopia 2.0.1. Requires the CSA launch wrapper; no mod or save needed."
+    },
+    "pokopia_habitat_creator": {
+      "op": "number",
+      "flags": [
+        "habitats"
+      ],
+      "threshold": 5,
+      "note": "Experimental live memory tracking for Recompia / Pokopia 2.0.1. Requires the CSA launch wrapper; no mod or save needed."
+    },
+    "pokopia_master_builder": {
+      "op": "number",
+      "flags": [
+        "habitats"
+      ],
+      "threshold": 15,
+      "note": "Experimental live memory tracking for Recompia / Pokopia 2.0.1. Requires the CSA launch wrapper; no mod or save needed."
+    },
+    "pokopia_recipe_collector": {
+      "op": "number",
+      "flags": [
+        "recipes"
+      ],
+      "threshold": 100,
+      "note": "Experimental live memory tracking for Recompia / Pokopia 2.0.1. Requires the CSA launch wrapper; no mod or save needed."
+    },
+    "pokopia_master_crafter": {
+      "op": "number",
+      "flags": [
+        "recipes"
+      ],
+      "threshold": 250,
+      "note": "Experimental live memory tracking for Recompia / Pokopia 2.0.1. Requires the CSA launch wrapper; no mod or save needed."
+    },
+    "pokopia_transformation_master": {
+      "op": "number",
+      "flags": [
+        "moves"
+      ],
+      "threshold": 10,
+      "note": "Experimental live memory tracking for Recompia / Pokopia 2.0.1. Requires the CSA launch wrapper; no mod or save needed."
+    },
+    "pokopia_fertilizer_master": {
+      "op": "number",
+      "flags": [
+        "water_gun_uses"
+      ],
+      "threshold": 50,
+      "note": "Experimental live memory tracking for Recompia / Pokopia 2.0.1. Requires the CSA launch wrapper; no mod or save needed."
+    }
+  },
+  "live": "recompia-memory-v1",
+  "socket": "${XDG_DATA_HOME}/custom-achievements/pokopia-live.sock",
+  "liveOnly": true
+}

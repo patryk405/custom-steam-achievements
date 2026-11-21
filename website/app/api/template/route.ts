@@ -1,0 +1,2 @@
+import {builtinPack} from '@/lib/packs';
+export function GET(){const a=builtinPack.achievements.find(x=>x.id==='reddit_korok_first')!;return new Response(JSON.stringify({...builtinPack,id:'my-first-pack',title:'My first achievement pack',author:'Your creator name',description:'A small starter pack: find your first Korok seed.',achievements:[a],rules:{[a.id]:builtinPack.rules[a.id]}},null,2),{headers:{'Content-Type':'application/json','Content-Disposition':'attachment; filename="achievement-pack-template.json"'}});}

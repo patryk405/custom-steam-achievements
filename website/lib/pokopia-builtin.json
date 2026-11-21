@@ -1,0 +1,179 @@
+{
+  "schema": 1,
+  "id": "pokopia-collection",
+  "title": "Pokopia Community Collection",
+  "game": "pokopia",
+  "version": "0.3.1",
+  "author": "Custom Steam Achievements",
+  "description": "11 objectives read directly from Pokopia 2.0.1 saves and autosaves. No mod required. Real-game verification pending.",
+  "source": "https://github.com/Dittobyte/Recompia",
+  "achievements": [
+    {
+      "id": "pokopia_first_habitat",
+      "name": "First Habitat",
+      "description": "Make your first habitat.",
+      "target": 1,
+      "icon": "crown"
+    },
+    {
+      "id": "pokopia_first_friend",
+      "name": "First Friend",
+      "description": "Add your first Pokemon to the Pokedex.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "pokopia_growing_community",
+      "name": "Growing Community",
+      "description": "Have 25 Pokemon in your Pokedex.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "pokopia_bustling_island",
+      "name": "Bustling Island",
+      "description": "Have 100 Pokemon in your Pokedex.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "pokopia_full_house",
+      "name": "Full House",
+      "description": "Have 150 Pokemon in your Pokedex.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "pokopia_recipe_collector",
+      "name": "Recipe Collector",
+      "description": "Learn 100 recipes.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "pokopia_master_crafter",
+      "name": "Master Crafter",
+      "description": "Learn 250 recipes.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "pokopia_transformation_master",
+      "name": "Transformation Master",
+      "description": "Learn 10 moves.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "pokopia_habitat_creator",
+      "name": "Habitat Creator",
+      "description": "Make 5 kinds of habitat.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "pokopia_master_builder",
+      "name": "Master Builder",
+      "description": "Make 15 kinds of habitat.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "pokopia_fertilizer_master",
+      "name": "Fertilizer Master",
+      "description": "Use Water Gun 50 times.",
+      "target": 1,
+      "icon": "star"
+    }
+  ],
+  "rules": {
+    "pokopia_first_friend": {
+      "op": "number",
+      "flags": [
+        "dex"
+      ],
+      "threshold": 1,
+      "note": "Read directly from Pokopia 2.0.1 save/autosave; no mod required."
+    },
+    "pokopia_growing_community": {
+      "op": "number",
+      "flags": [
+        "dex"
+      ],
+      "threshold": 25,
+      "note": "Read directly from Pokopia 2.0.1 save/autosave; no mod required."
+    },
+    "pokopia_bustling_island": {
+      "op": "number",
+      "flags": [
+        "dex"
+      ],
+      "threshold": 100,
+      "note": "Read directly from Pokopia 2.0.1 save/autosave; no mod required."
+    },
+    "pokopia_full_house": {
+      "op": "number",
+      "flags": [
+        "dex"
+      ],
+      "threshold": 150,
+      "note": "Read directly from Pokopia 2.0.1 save/autosave; no mod required."
+    },
+    "pokopia_first_habitat": {
+      "op": "number",
+      "flags": [
+        "habitats"
+      ],
+      "threshold": 1,
+      "note": "Read directly from Pokopia 2.0.1 save/autosave; no mod required."
+    },
+    "pokopia_habitat_creator": {
+      "op": "number",
+      "flags": [
+        "habitats"
+      ],
+      "threshold": 5,
+      "note": "Read directly from Pokopia 2.0.1 save/autosave; no mod required."
+    },
+    "pokopia_master_builder": {
+      "op": "number",
+      "flags": [
+        "habitats"
+      ],
+      "threshold": 15,
+      "note": "Read directly from Pokopia 2.0.1 save/autosave; no mod required."
+    },
+    "pokopia_recipe_collector": {
+      "op": "number",
+      "flags": [
+        "recipes"
+      ],
+      "threshold": 100,
+      "note": "Read directly from Pokopia 2.0.1 save/autosave; no mod required."
+    },
+    "pokopia_master_crafter": {
+      "op": "number",
+      "flags": [
+        "recipes"
+      ],
+      "threshold": 250,
+      "note": "Read directly from Pokopia 2.0.1 save/autosave; no mod required."
+    },
+    "pokopia_transformation_master": {
+      "op": "number",
+      "flags": [
+        "moves"
+      ],
+      "threshold": 10,
+      "note": "Read directly from Pokopia 2.0.1 save/autosave; no mod required."
+    },
+    "pokopia_fertilizer_master": {
+      "op": "number",
+      "flags": [
+        "water_gun_uses"
+      ],
+      "threshold": 50,
+      "note": "Read directly from Pokopia 2.0.1 save/autosave; no mod required."
+    }
+  }
+}

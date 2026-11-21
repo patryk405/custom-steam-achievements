@@ -1,0 +1,13 @@
+node_modules/
+.millennium/
+__pycache__/
+*.pyc
+.env*
+.dev.vars*
+.wrangler/
+.sites-runtime/
+dist/
+.next/
+*.tsbuildinfo
+backups/
+*.sqlite*

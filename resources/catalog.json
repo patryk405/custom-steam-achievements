@@ -1,0 +1,1670 @@
+{
+  "botw": {
+    "name": "Breath of the Wild",
+    "color": "#64bacb",
+    "achievements": [
+      {
+        "id": "test_look_up",
+        "name": "Sky gazer",
+        "description": "Look up at the sky for a few seconds.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "reddit_calamity",
+        "name": "Calamity Adverted",
+        "description": "Defeat Calamity Ganon",
+        "target": 1,
+        "icon": "ganon"
+      },
+      {
+        "id": "reddit_wild",
+        "name": "Hero of the Wild",
+        "description": "Find the Green Tunic",
+        "target": 1,
+        "icon": "tunic"
+      },
+      {
+        "id": "reddit_first",
+        "name": "Your First Steps",
+        "description": "Leave the Shrine of Resurrection",
+        "target": 1,
+        "icon": "door"
+      },
+      {
+        "id": "reddit_plateau",
+        "name": "Welcome to Hyrule",
+        "description": "Leave the Great Plateau",
+        "target": 1,
+        "icon": "glider"
+      },
+      {
+        "id": "reddit_korok_first",
+        "name": "1 down, many to go",
+        "description": "Find your first Korok seed",
+        "target": 1,
+        "icon": "korok_1"
+      },
+      {
+        "id": "reddit_korok_half",
+        "name": "Halfway there!",
+        "description": "Find half of the Korok seeds",
+        "target": 1,
+        "icon": "korok_2"
+      },
+      {
+        "id": "reddit_korok_all",
+        "name": "A Special Gift",
+        "description": "Find all the Korok seeds",
+        "target": 1,
+        "icon": "gift"
+      },
+      {
+        "id": "reddit_home",
+        "name": "Hylian home owner",
+        "description": "Own a home in Hyrule",
+        "target": 1,
+        "icon": "home"
+      },
+      {
+        "id": "reddit_shrines30",
+        "name": "Shrine Delver",
+        "description": "Complete 30 Shrines",
+        "target": 30,
+        "icon": "shrine_1"
+      },
+      {
+        "id": "reddit_shrines60",
+        "name": "Shrine Seeker",
+        "description": "Complete 60 Shrines",
+        "target": 60,
+        "icon": "shrine_2"
+      },
+      {
+        "id": "reddit_shrines90",
+        "name": "Shrine Adventurer",
+        "description": "Complete 90 Shrines",
+        "target": 90,
+        "icon": "shrine_3"
+      },
+      {
+        "id": "reddit_shrines_all",
+        "name": "Shrine Master",
+        "description": "Complete all Shrines",
+        "target": 1,
+        "icon": "shrine_4"
+      },
+      {
+        "id": "reddit_towers_half",
+        "name": "Hyrule Explorer",
+        "description": "Restore half the Towers of Hyrule",
+        "target": 1,
+        "icon": "tower_1"
+      },
+      {
+        "id": "reddit_towers_all",
+        "name": "Hyrule Expert",
+        "description": "Restore all the Towers of Hyrule",
+        "target": 1,
+        "icon": "tower_2"
+      },
+      {
+        "id": "reddit_ruta",
+        "name": "Vah Ruta restored!",
+        "description": "Re~capture Vah Ruta from Calamity Ganon",
+        "target": 1,
+        "icon": "elephant"
+      },
+      {
+        "id": "reddit_rudania",
+        "name": "Vah Rudania restored!",
+        "description": "Re~capture Vah Rudania from Calamity Ganon",
+        "target": 1,
+        "icon": "lizard"
+      },
+      {
+        "id": "reddit_medo",
+        "name": "Vah Medo restored!",
+        "description": "Re~capture Vah Medo from Calamity Ganon",
+        "target": 1,
+        "icon": "bird"
+      },
+      {
+        "id": "reddit_naborris",
+        "name": "Vah Naborris restored!",
+        "description": "Re~capture Vah Naborris from Calamity Ganon",
+        "target": 1,
+        "icon": "camel"
+      },
+      {
+        "id": "reddit_memory_first",
+        "name": "I remember that!",
+        "description": "Recall a memory",
+        "target": 1,
+        "icon": "memory_1"
+      },
+      {
+        "id": "reddit_memory_all",
+        "name": "Amnesia, no more",
+        "description": "Recall all your memories",
+        "target": 1,
+        "icon": "memory_3"
+      },
+      {
+        "id": "reddit_white_horse",
+        "name": "The White Horse",
+        "description": "Find and register the elusive White Horse",
+        "target": 1,
+        "icon": "whitehorse"
+      },
+      {
+        "id": "reddit_giant_horse",
+        "name": "Just a tad big!",
+        "description": "Find and register the Giant Horse",
+        "target": 1,
+        "icon": "gianthorse"
+      },
+      {
+        "id": "reddit_champion",
+        "name": "The Champion of Hyrule",
+        "description": "Acquire the Champion’s tunic",
+        "target": 1,
+        "icon": "champion"
+      },
+      {
+        "id": "reddit_hylian",
+        "name": "The Clothes of my People",
+        "description": "Acquire all Hylian Armor",
+        "target": 1,
+        "icon": "hylian"
+      },
+      {
+        "id": "reddit_zora",
+        "name": "Swim like a Zora",
+        "description": "Acquire all Zora Armor",
+        "target": 1,
+        "icon": "zora"
+      },
+      {
+        "id": "reddit_gorons",
+        "name": "Fight like a Goron",
+        "description": "Acquire all Goron Armor",
+        "target": 1,
+        "icon": "goron"
+      },
+      {
+        "id": "reddit_rito",
+        "name": "Fly like a Rito",
+        "description": "Acquire all Rito Armor",
+        "target": 1,
+        "icon": "rito"
+      },
+      {
+        "id": "reddit_gerudo",
+        "name": "Move like a Gerudo",
+        "description": "Acquire all Gerudo Armor",
+        "target": 1,
+        "icon": "gerudo"
+      },
+      {
+        "id": "reddit_zora_help",
+        "name": "Aiding Royalty",
+        "description": "Help the Zoras",
+        "target": 1,
+        "icon": "crown"
+      },
+      {
+        "id": "reddit_gorons_help",
+        "name": "Helping a brother in need",
+        "description": "Help the Gorons",
+        "target": 1,
+        "icon": "fist"
+      },
+      {
+        "id": "reddit_rito_help",
+        "name": "In flight",
+        "description": "Help the Rito",
+        "target": 1,
+        "icon": "feather"
+      },
+      {
+        "id": "reddit_gerudo_help",
+        "name": "One of you",
+        "description": "Help the Gerudo",
+        "target": 1,
+        "icon": "desert"
+      },
+      {
+        "id": "reddit_guardian",
+        "name": "Guardian Killer",
+        "description": "Defeat your first Guardian",
+        "target": 1,
+        "icon": "guardian"
+      },
+      {
+        "id": "reddit_master_sword",
+        "name": "The Sword that seals the Darkness",
+        "description": "Pull out the Sword of Legend",
+        "target": 1,
+        "icon": "master_sword"
+      },
+      {
+        "id": "reddit_fairies",
+        "name": "The Great Fairies",
+        "description": "Find and rescue the Great Fairies of Hyrule",
+        "target": 1,
+        "icon": "fairy"
+      },
+      {
+        "id": "reddit_horse_god",
+        "name": "The Horse God",
+        "description": "Meet the Horse God",
+        "target": 1,
+        "icon": "horse_god"
+      },
+      {
+        "id": "reddit_eventide",
+        "name": "Cast Away",
+        "description": "Survive Eventide Island",
+        "target": 1,
+        "icon": "island"
+      },
+      {
+        "id": "reddit_wallet",
+        "name": "Long term investment",
+        "description": "Max out your wallet",
+        "target": 1,
+        "icon": "rupee"
+      }
+    ],
+    "matchNames": [
+      "breath of the wild",
+      "savage wind",
+      "savagewind"
+    ]
+  },
+  "oot": {
+    "name": "Ocarina of Time · Longshot",
+    "color": "#d7b36c",
+    "achievements": [
+      {
+        "id": "oot_first_steps",
+        "name": "First Steps",
+        "description": "Walk 5 metres during gameplay.",
+        "target": 5,
+        "icon": "mountain"
+      },
+      {
+        "id": "oot_pocket_change",
+        "name": "Pocket Change",
+        "description": "Have at least 1 Rupee in your wallet.",
+        "target": 1,
+        "icon": "gem"
+      },
+      {
+        "id": "oot_emerald",
+        "name": "Kokiri Emerald",
+        "description": "Obtain the Kokiri Emerald.",
+        "target": 1,
+        "icon": "gem"
+      },
+      {
+        "id": "oot_ruby",
+        "name": "Goron Ruby",
+        "description": "Obtain the Goron Ruby.",
+        "target": 1,
+        "icon": "gem"
+      },
+      {
+        "id": "oot_sapphire",
+        "name": "Zora Sapphire",
+        "description": "Obtain the Zora Sapphire.",
+        "target": 1,
+        "icon": "gem"
+      },
+      {
+        "id": "oot_medal_light",
+        "name": "Light Medallion",
+        "description": "Obtain the Light Medallion.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "oot_medal_forest",
+        "name": "Forest Medallion",
+        "description": "Obtain the Forest Medallion.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "oot_medal_fire",
+        "name": "Fire Medallion",
+        "description": "Obtain the Fire Medallion.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "oot_medal_water",
+        "name": "Water Medallion",
+        "description": "Obtain the Water Medallion.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "oot_medal_shadow",
+        "name": "Shadow Medallion",
+        "description": "Obtain the Shadow Medallion.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "oot_medal_spirit",
+        "name": "Spirit Medallion",
+        "description": "Obtain the Spirit Medallion.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "oot_kokiri_sword",
+        "name": "A Sword of Your Own",
+        "description": "Obtain the Kokiri Sword.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "oot_master_sword",
+        "name": "Hero of Time",
+        "description": "Obtain the Master Sword.",
+        "target": 1,
+        "icon": "master_sword"
+      },
+      {
+        "id": "oot_biggoron",
+        "name": "Forged by a Giant",
+        "description": "Obtain the Biggoron’s Sword.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "oot_deku_shield",
+        "name": "Ready for Adventure",
+        "description": "Obtain the Deku Shield.",
+        "target": 1,
+        "icon": "shield"
+      },
+      {
+        "id": "oot_mirror",
+        "name": "Reflect on This",
+        "description": "Obtain the Mirror Shield.",
+        "target": 1,
+        "icon": "shield"
+      },
+      {
+        "id": "oot_slingshot",
+        "name": "Fairy Marksman",
+        "description": "Obtain the Fairy Slingshot.",
+        "target": 1,
+        "icon": "bow"
+      },
+      {
+        "id": "oot_bombs",
+        "name": "A Blast of Possibilities",
+        "description": "Obtain the Bomb Bag.",
+        "target": 1,
+        "icon": "bomb"
+      },
+      {
+        "id": "oot_boomerang",
+        "name": "Right Back at You",
+        "description": "Obtain the Boomerang.",
+        "target": 1,
+        "icon": "trade"
+      },
+      {
+        "id": "oot_bow",
+        "name": "Fairy Archer",
+        "description": "Obtain the Fairy Bow.",
+        "target": 1,
+        "icon": "bow"
+      },
+      {
+        "id": "oot_hookshot",
+        "name": "Reach for It",
+        "description": "Obtain the Hookshot.",
+        "target": 1,
+        "icon": "tower"
+      },
+      {
+        "id": "oot_longshot",
+        "name": "A Little Further",
+        "description": "Obtain the Longshot.",
+        "target": 1,
+        "icon": "tower"
+      },
+      {
+        "id": "oot_hammer",
+        "name": "Megaton Power",
+        "description": "Obtain the Megaton Hammer.",
+        "target": 1,
+        "icon": "fist"
+      },
+      {
+        "id": "oot_lens",
+        "name": "Seeing Is Believing",
+        "description": "Obtain the Lens of Truth.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "oot_iron_boots",
+        "name": "Heavy Footsteps",
+        "description": "Obtain the Iron Boots.",
+        "target": 1,
+        "icon": "armor"
+      },
+      {
+        "id": "oot_hover_boots",
+        "name": "Walk on Air",
+        "description": "Obtain the Hover Boots.",
+        "target": 1,
+        "icon": "feather"
+      },
+      {
+        "id": "oot_goron_tunic",
+        "name": "Too Hot to Handle",
+        "description": "Obtain the Goron Tunic.",
+        "target": 1,
+        "icon": "goron"
+      },
+      {
+        "id": "oot_zora_tunic",
+        "name": "Under the Surface",
+        "description": "Obtain the Zora Tunic.",
+        "target": 1,
+        "icon": "zora"
+      },
+      {
+        "id": "oot_silver_gauntlets",
+        "name": "Silver Strength",
+        "description": "Obtain the Silver Gauntlets.",
+        "target": 1,
+        "icon": "fist"
+      },
+      {
+        "id": "oot_gold_gauntlets",
+        "name": "Golden Strength",
+        "description": "Obtain the Golden Gauntlets.",
+        "target": 1,
+        "icon": "fist"
+      },
+      {
+        "id": "oot_fire_arrow",
+        "name": "Fire and Flight",
+        "description": "Obtain the Fire Arrows.",
+        "target": 1,
+        "icon": "bow"
+      },
+      {
+        "id": "oot_ice_arrow",
+        "name": "Ice and Flight",
+        "description": "Obtain the Ice Arrows.",
+        "target": 1,
+        "icon": "snow"
+      },
+      {
+        "id": "oot_light_arrow",
+        "name": "Light Against Darkness",
+        "description": "Obtain the Light Arrows.",
+        "target": 1,
+        "icon": "bow"
+      },
+      {
+        "id": "oot_ocarina",
+        "name": "An Instrument of Time",
+        "description": "Obtain the Ocarina of Time.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "oot_song_zeldalullaby",
+        "name": "Zelda’s Lullaby",
+        "description": "Learn Zelda’s Lullaby.",
+        "target": 1,
+        "icon": "memory"
+      },
+      {
+        "id": "oot_song_eponasong",
+        "name": "Epona’s Song",
+        "description": "Learn Epona’s Song.",
+        "target": 1,
+        "icon": "memory"
+      },
+      {
+        "id": "oot_song_sariasong",
+        "name": "Saria’s Song",
+        "description": "Learn Saria’s Song.",
+        "target": 1,
+        "icon": "memory"
+      },
+      {
+        "id": "oot_song_sunsong",
+        "name": "Sun’s Song",
+        "description": "Learn Sun’s Song.",
+        "target": 1,
+        "icon": "memory"
+      },
+      {
+        "id": "oot_song_timesong",
+        "name": "Song of Time",
+        "description": "Learn Song of Time.",
+        "target": 1,
+        "icon": "memory"
+      },
+      {
+        "id": "oot_song_stormsong",
+        "name": "Song of Storms",
+        "description": "Learn Song of Storms.",
+        "target": 1,
+        "icon": "memory"
+      },
+      {
+        "id": "oot_song_forestminuet",
+        "name": "Minuet of Forest",
+        "description": "Learn Minuet of Forest.",
+        "target": 1,
+        "icon": "memory"
+      },
+      {
+        "id": "oot_song_firebolero",
+        "name": "Bolero of Fire",
+        "description": "Learn Bolero of Fire.",
+        "target": 1,
+        "icon": "memory"
+      },
+      {
+        "id": "oot_song_waterserenade",
+        "name": "Serenade of Water",
+        "description": "Learn Serenade of Water.",
+        "target": 1,
+        "icon": "memory"
+      },
+      {
+        "id": "oot_song_shadownocturne",
+        "name": "Nocturne of Shadow",
+        "description": "Learn Nocturne of Shadow.",
+        "target": 1,
+        "icon": "memory"
+      },
+      {
+        "id": "oot_song_spiritrequiem",
+        "name": "Requiem of Spirit",
+        "description": "Learn Requiem of Spirit.",
+        "target": 1,
+        "icon": "memory"
+      },
+      {
+        "id": "oot_song_lightprelude",
+        "name": "Prelude of Light",
+        "description": "Learn Prelude of Light.",
+        "target": 1,
+        "icon": "memory"
+      },
+      {
+        "id": "oot_din",
+        "name": "A Fiery Gift",
+        "description": "Obtain the Din’s Fire.",
+        "target": 1,
+        "icon": "lizard"
+      },
+      {
+        "id": "oot_farore",
+        "name": "A Windy Escape",
+        "description": "Obtain the Farore’s Wind.",
+        "target": 1,
+        "icon": "feather"
+      },
+      {
+        "id": "oot_nayru",
+        "name": "Love Is a Shield",
+        "description": "Obtain the Nayru’s Love.",
+        "target": 1,
+        "icon": "shield"
+      },
+      {
+        "id": "oot_magic",
+        "name": "A Touch of Magic",
+        "description": "Obtain the magic meter.",
+        "target": 1,
+        "icon": "fairy"
+      },
+      {
+        "id": "oot_double_magic",
+        "name": "More Magic",
+        "description": "Obtain the double magic meter.",
+        "target": 1,
+        "icon": "fairy"
+      },
+      {
+        "id": "oot_defense",
+        "name": "Blessed Protection",
+        "description": "Obtain the double defense upgrade.",
+        "target": 1,
+        "icon": "heart"
+      },
+      {
+        "id": "oot_truth",
+        "name": "Behind the Mask",
+        "description": "Obtain the Mask of Truth.",
+        "target": 1,
+        "icon": "speech"
+      },
+      {
+        "id": "oot_gerudo",
+        "name": "One of the Gerudo",
+        "description": "Obtain the Gerudo Membership Card.",
+        "target": 1,
+        "icon": "gerudo"
+      },
+      {
+        "id": "oot_wallet",
+        "name": "Room for Riches",
+        "description": "Obtain the Giant’s Wallet.",
+        "target": 1,
+        "icon": "rupee"
+      },
+      {
+        "id": "oot_skulltulas_1",
+        "name": "Gold Hunter · 1",
+        "description": "Collect 1 Gold Skulltula token.",
+        "target": 1,
+        "icon": "guardian"
+      },
+      {
+        "id": "oot_skulltulas_10",
+        "name": "Gold Hunter · 10",
+        "description": "Collect 10 Gold Skulltula tokens.",
+        "target": 10,
+        "icon": "guardian"
+      },
+      {
+        "id": "oot_skulltulas_30",
+        "name": "Gold Hunter · 30",
+        "description": "Collect 30 Gold Skulltula tokens.",
+        "target": 30,
+        "icon": "guardian"
+      },
+      {
+        "id": "oot_skulltulas_50",
+        "name": "Gold Hunter · 50",
+        "description": "Collect 50 Gold Skulltula tokens.",
+        "target": 50,
+        "icon": "guardian"
+      },
+      {
+        "id": "oot_skulltulas_100",
+        "name": "Curse Breaker",
+        "description": "Collect 100 Gold Skulltula tokens.",
+        "target": 100,
+        "icon": "guardian"
+      },
+      {
+        "id": "oot_hearts_10",
+        "name": "10 Hearts Strong",
+        "description": "Reach 10 heart containers of maximum health.",
+        "target": 10,
+        "icon": "heart"
+      },
+      {
+        "id": "oot_hearts_20",
+        "name": "20 Hearts Strong",
+        "description": "Reach 20 heart containers of maximum health.",
+        "target": 20,
+        "icon": "heart"
+      },
+      {
+        "id": "oot_three_stones",
+        "name": "The Spiritual Stones",
+        "description": "Obtain all three Spiritual Stones.",
+        "target": 1,
+        "icon": "triforce"
+      },
+      {
+        "id": "oot_six_medals",
+        "name": "Awakening the Sages",
+        "description": "Obtain all six medallions.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "oot_all_songs",
+        "name": "Hyrule’s Songbook",
+        "description": "Learn all twelve main ocarina songs.",
+        "target": 1,
+        "icon": "memory"
+      },
+      {
+        "id": "oot_three_spells",
+        "name": "Gifts of the Goddesses",
+        "description": "Obtain Din’s Fire, Farore’s Wind and Nayru’s Love.",
+        "target": 1,
+        "icon": "fairy"
+      }
+    ],
+    "matchNames": [
+      "ocarina of time",
+      "longshot"
+    ]
+  },
+  "bloodborne": {
+    "name": "Bloodborne · BBPort",
+    "color": "#bb8f7b",
+    "matchNames": [
+      "bloodborne",
+      "bbport"
+    ],
+    "achievements": [
+      {
+        "id": "bb_trophy_0",
+        "name": "Bloodborne",
+        "description": "Unlock the other 33 base-game trophies.",
+        "target": 1,
+        "icon": "crown"
+      },
+      {
+        "id": "bb_trophy_1",
+        "name": "Yharnam Sunrise",
+        "description": "Reach the ending where the hunter leaves the dream.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "bb_trophy_2",
+        "name": "Honoring Wishes",
+        "description": "Reach the ending where the hunter replaces Gehrman.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "bb_trophy_3",
+        "name": "Childhood's Beginning",
+        "description": "Reach the ending where the hunter becomes a Great One.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "bb_trophy_4",
+        "name": "Yharnam, Pthumerian Queen",
+        "description": "Overcome the queen at the end of the Pthumerian chalice route.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "bb_trophy_5",
+        "name": "Hunter's Essence",
+        "description": "Complete the collection of base-game hunter weapons.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "bb_trophy_6",
+        "name": "Hunter's Craft",
+        "description": "Complete the collection of base-game hunter tools.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "bb_trophy_7",
+        "name": "Weapon Master",
+        "description": "Upgrade any weapon to its maximum level.",
+        "target": 1,
+        "icon": "shield"
+      },
+      {
+        "id": "bb_trophy_8",
+        "name": "Blood Gem Master",
+        "description": "Find a top-tier blood gem.",
+        "target": 1,
+        "icon": "shield"
+      },
+      {
+        "id": "bb_trophy_9",
+        "name": "Rune Master",
+        "description": "Find a top-tier Caryll rune.",
+        "target": 1,
+        "icon": "shield"
+      },
+      {
+        "id": "bb_trophy_10",
+        "name": "Cainhurst",
+        "description": "Enter the abandoned Cainhurst castle.",
+        "target": 1,
+        "icon": "shield"
+      },
+      {
+        "id": "bb_trophy_11",
+        "name": "The Choir",
+        "description": "Reach the Choir’s territory.",
+        "target": 1,
+        "icon": "shield"
+      },
+      {
+        "id": "bb_trophy_12",
+        "name": "The Source of the Dream",
+        "description": "Find the workshop that inspired the dream.",
+        "target": 1,
+        "icon": "shield"
+      },
+      {
+        "id": "bb_trophy_13",
+        "name": "Nightmare Lecture Building",
+        "description": "Enter the nightmare lecture hall.",
+        "target": 1,
+        "icon": "shield"
+      },
+      {
+        "id": "bb_trophy_14",
+        "name": "Father Gascoigne",
+        "description": "Win the boss encounter with Father Gascoigne.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_15",
+        "name": "Vicar Amelia",
+        "description": "Win the boss encounter with Vicar Amelia.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_16",
+        "name": "Shadow of Yharnam",
+        "description": "Win the boss encounter with Shadow of Yharnam.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_17",
+        "name": "Rom, the Vacuous Spider",
+        "description": "Win the boss encounter with Rom, the Vacuous Spider.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_18",
+        "name": "The One Reborn",
+        "description": "Win the boss encounter with The One Reborn.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_19",
+        "name": "Micolash, Host of the Nightmare",
+        "description": "Win the boss encounter with Micolash, Host of the Nightmare.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_20",
+        "name": "Mergo's Wet Nurse",
+        "description": "Win the boss encounter with Mergo's Wet Nurse.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_21",
+        "name": "Cleric Beast",
+        "description": "Win the boss encounter with Cleric Beast.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_22",
+        "name": "Blood-starved Beast",
+        "description": "Win the boss encounter with Blood-starved Beast.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_23",
+        "name": "The Witch of Hemwick",
+        "description": "Win the boss encounter with The Witch of Hemwick.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_24",
+        "name": "Darkbeast Paarl",
+        "description": "Win the boss encounter with Darkbeast Paarl.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_25",
+        "name": "Amygdala",
+        "description": "Win the boss encounter with Amygdala.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_26",
+        "name": "Martyr Logarius",
+        "description": "Win the boss encounter with Martyr Logarius.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_27",
+        "name": "Celestial Emissary",
+        "description": "Win the boss encounter with Celestial Emissary.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_28",
+        "name": "Ebrietas, Daughter of the Cosmos",
+        "description": "Win the boss encounter with Ebrietas, Daughter of the Cosmos.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_29",
+        "name": "Blood Gem Contact",
+        "description": "Find your first weapon blood gem.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_30",
+        "name": "Rune Contact",
+        "description": "Find your first Caryll rune.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_31",
+        "name": "Chalice of Pthumeru",
+        "description": "Obtain the key chalice for Pthumeru.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_32",
+        "name": "Chalice of Ailing Loran",
+        "description": "Obtain the key chalice for Ailing Loran.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_33",
+        "name": "Chalice of Isz",
+        "description": "Obtain the key chalice for Isz.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_34",
+        "name": "Old Hunter's Essence",
+        "description": "Complete the expansion’s hunter weapon collection.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "bb_trophy_35",
+        "name": "Orphan of Kos",
+        "description": "Win the expansion boss encounter with Orphan of Kos.",
+        "target": 1,
+        "icon": "shield"
+      },
+      {
+        "id": "bb_trophy_36",
+        "name": "Ludwig, the Holy Blade",
+        "description": "Win the expansion boss encounter with Ludwig, the Holy Blade.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_37",
+        "name": "Lady Maria of the Astral Clocktower",
+        "description": "Win the expansion boss encounter with Lady Maria of the Astral Clocktower.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_38",
+        "name": "Living Failures",
+        "description": "Win the expansion boss encounter with Living Failures.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "bb_trophy_39",
+        "name": "Laurence, the First Vicar",
+        "description": "Win the expansion boss encounter with Laurence, the First Vicar.",
+        "target": 1,
+        "icon": "sword"
+      }
+    ]
+  },
+  "arceus": {
+    "name": "Pokémon Legends: Arceus",
+    "color": "#71c9a2",
+    "matchNames": [
+      "legends: arceus",
+      "legends arceus",
+      "pokel-arecomp",
+      "pla-recomp"
+    ],
+    "achievements": [
+      {
+        "id": "arceus_expeditionteamrank1",
+        "name": "1-Star Surveyor",
+        "description": "Reach Galaxy Team rank 1.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_expeditionteamrank2",
+        "name": "2-Star Surveyor",
+        "description": "Reach Galaxy Team rank 2.",
+        "target": 2,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_expeditionteamrank3",
+        "name": "3-Star Surveyor",
+        "description": "Reach Galaxy Team rank 3.",
+        "target": 3,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_expeditionteamrank4",
+        "name": "4-Star Surveyor",
+        "description": "Reach Galaxy Team rank 4.",
+        "target": 4,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_expeditionteamrank5",
+        "name": "5-Star Surveyor",
+        "description": "Reach Galaxy Team rank 5.",
+        "target": 5,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_expeditionteamrank6",
+        "name": "6-Star Surveyor",
+        "description": "Reach Galaxy Team rank 6.",
+        "target": 6,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_expeditionteamrank7",
+        "name": "7-Star Surveyor",
+        "description": "Reach Galaxy Team rank 7.",
+        "target": 7,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_expeditionteamrank8",
+        "name": "8-Star Surveyor",
+        "description": "Reach Galaxy Team rank 8.",
+        "target": 8,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_expeditionteamrank9",
+        "name": "9-Star Surveyor",
+        "description": "Reach Galaxy Team rank 9.",
+        "target": 9,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_expeditionteamrank10",
+        "name": "10-Star Surveyor",
+        "description": "Reach Galaxy Team rank 10.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_canridewyrdeer",
+        "name": "Wyrdeer Rider",
+        "description": "Unlock Wyrdeer as a ride Pokémon.",
+        "target": 1,
+        "icon": "horse"
+      },
+      {
+        "id": "arceus_canrideursaluna",
+        "name": "Ursaluna Rider",
+        "description": "Unlock Ursaluna as a ride Pokémon.",
+        "target": 1,
+        "icon": "horse"
+      },
+      {
+        "id": "arceus_canridebasculegion",
+        "name": "Basculegion Rider",
+        "description": "Unlock Basculegion as a ride Pokémon.",
+        "target": 1,
+        "icon": "horse"
+      },
+      {
+        "id": "arceus_canridesneasler",
+        "name": "Sneasler Rider",
+        "description": "Unlock Sneasler as a ride Pokémon.",
+        "target": 1,
+        "icon": "horse"
+      },
+      {
+        "id": "arceus_canridebraviary",
+        "name": "Braviary Rider",
+        "description": "Unlock Braviary as a ride Pokémon.",
+        "target": 1,
+        "icon": "horse"
+      },
+      {
+        "id": "arceus_defeatedlordkleavor",
+        "name": "Kleavor Calmed",
+        "description": "Defeat Kleavor.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "arceus_defeatedladylilligant",
+        "name": "Lilligant Calmed",
+        "description": "Defeat Lilligant.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "arceus_defeatedlordarcanine",
+        "name": "Arcanine Calmed",
+        "description": "Defeat Arcanine.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "arceus_defeatedlordelectrode",
+        "name": "Electrode Calmed",
+        "description": "Defeat Electrode.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "arceus_defeatedlordavalugg",
+        "name": "Avalugg Calmed",
+        "description": "Defeat Avalugg.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "arceus_defeatedarceus",
+        "name": "The Original One",
+        "description": "Defeat Arceus.",
+        "target": 1,
+        "icon": "sword"
+      },
+      {
+        "id": "arceus_completedpokedex",
+        "name": "The Hisui Survey",
+        "description": "Complete the Pokédex milestone that unlocks the Azure Flute encounter.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_perfectedpokedex",
+        "name": "Perfect Research",
+        "description": "Achieve the game’s complete Pokédex research milestone.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_unlockedlostandfound",
+        "name": "Lost and Found",
+        "description": "Unlock Lost and Found.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_unlockedmassrelease",
+        "name": "Pasture Manager",
+        "description": "Unlock mass release.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_unlockeddistortions",
+        "name": "Space-Time Explorer",
+        "description": "Unlock space-time distortions.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_totalunowncaptured1",
+        "name": "Unown Notes",
+        "description": "Capture 1 Unown forms.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_totalunowncaptured28",
+        "name": "The Whole Alphabet",
+        "description": "Capture 28 Unown forms.",
+        "target": 28,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_wispsfoundtotal1",
+        "name": "1 Wisps",
+        "description": "Collect 1 wisps.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_wispsfoundtotal30",
+        "name": "30 Wisps",
+        "description": "Collect 30 wisps.",
+        "target": 30,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_wispsfoundtotal60",
+        "name": "60 Wisps",
+        "description": "Collect 60 wisps.",
+        "target": 60,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_wispsfoundtotal107",
+        "name": "107 Wisps",
+        "description": "Collect 107 wisps.",
+        "target": 107,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_satchelupgrades1",
+        "name": "Room for 1 More",
+        "description": "Buy 1 satchel upgrades.",
+        "target": 1,
+        "icon": "backpack"
+      },
+      {
+        "id": "arceus_satchelupgrades10",
+        "name": "Room for 10 More",
+        "description": "Buy 10 satchel upgrades.",
+        "target": 10,
+        "icon": "backpack"
+      },
+      {
+        "id": "arceus_satchelupgrades39",
+        "name": "Room for 39 More",
+        "description": "Buy 39 satchel upgrades.",
+        "target": 39,
+        "icon": "backpack"
+      },
+      {
+        "id": "arceus_recordlostsatchelsfound1",
+        "name": "Recovery Team 1",
+        "description": "Recover 1 lost satchels.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_recordlostsatchelsfound10",
+        "name": "Recovery Team 10",
+        "description": "Recover 10 lost satchels.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "arceus_recordlostsatchelsfound50",
+        "name": "Recovery Team 50",
+        "description": "Recover 50 lost satchels.",
+        "target": 50,
+        "icon": "star"
+      }
+    ]
+  },
+  "odyssey": {
+    "name": "Super Mario Odyssey",
+    "color": "#e75c63",
+    "matchNames": [
+      "super mario odyssey",
+      "super odyssey pc"
+    ],
+    "achievements": [
+      {
+        "id": "odyssey_kingdom_0",
+        "name": "Cap Bound",
+        "description": "Unlock the Cap Kingdom.",
+        "target": 1,
+        "icon": "mountain"
+      },
+      {
+        "id": "odyssey_moons_0",
+        "name": "Cap Collector",
+        "description": "Record 10 Power Moons in the Cap Kingdom.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_kingdom_1",
+        "name": "Cascade Bound",
+        "description": "Unlock the Cascade Kingdom.",
+        "target": 1,
+        "icon": "mountain"
+      },
+      {
+        "id": "odyssey_moons_1",
+        "name": "Cascade Collector",
+        "description": "Record 10 Power Moons in the Cascade Kingdom.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_kingdom_2",
+        "name": "Sand Bound",
+        "description": "Unlock the Sand Kingdom.",
+        "target": 1,
+        "icon": "mountain"
+      },
+      {
+        "id": "odyssey_moons_2",
+        "name": "Sand Collector",
+        "description": "Record 10 Power Moons in the Sand Kingdom.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_kingdom_3",
+        "name": "Lake Bound",
+        "description": "Unlock the Lake Kingdom.",
+        "target": 1,
+        "icon": "mountain"
+      },
+      {
+        "id": "odyssey_moons_3",
+        "name": "Lake Collector",
+        "description": "Record 10 Power Moons in the Lake Kingdom.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_kingdom_4",
+        "name": "Wooded Bound",
+        "description": "Unlock the Wooded Kingdom.",
+        "target": 1,
+        "icon": "mountain"
+      },
+      {
+        "id": "odyssey_moons_4",
+        "name": "Wooded Collector",
+        "description": "Record 10 Power Moons in the Wooded Kingdom.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_kingdom_5",
+        "name": "Cloud Bound",
+        "description": "Unlock the Cloud Kingdom.",
+        "target": 1,
+        "icon": "mountain"
+      },
+      {
+        "id": "odyssey_kingdom_6",
+        "name": "Lost Bound",
+        "description": "Unlock the Lost Kingdom.",
+        "target": 1,
+        "icon": "mountain"
+      },
+      {
+        "id": "odyssey_moons_6",
+        "name": "Lost Collector",
+        "description": "Record 10 Power Moons in the Lost Kingdom.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_kingdom_7",
+        "name": "Metro Bound",
+        "description": "Unlock the Metro Kingdom.",
+        "target": 1,
+        "icon": "mountain"
+      },
+      {
+        "id": "odyssey_moons_7",
+        "name": "Metro Collector",
+        "description": "Record 10 Power Moons in the Metro Kingdom.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_kingdom_8",
+        "name": "Snow Bound",
+        "description": "Unlock the Snow Kingdom.",
+        "target": 1,
+        "icon": "mountain"
+      },
+      {
+        "id": "odyssey_moons_8",
+        "name": "Snow Collector",
+        "description": "Record 10 Power Moons in the Snow Kingdom.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_kingdom_9",
+        "name": "Seaside Bound",
+        "description": "Unlock the Seaside Kingdom.",
+        "target": 1,
+        "icon": "mountain"
+      },
+      {
+        "id": "odyssey_moons_9",
+        "name": "Seaside Collector",
+        "description": "Record 10 Power Moons in the Seaside Kingdom.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_kingdom_10",
+        "name": "Luncheon Bound",
+        "description": "Unlock the Luncheon Kingdom.",
+        "target": 1,
+        "icon": "mountain"
+      },
+      {
+        "id": "odyssey_moons_10",
+        "name": "Luncheon Collector",
+        "description": "Record 10 Power Moons in the Luncheon Kingdom.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_kingdom_11",
+        "name": "Ruined Bound",
+        "description": "Unlock the Ruined Kingdom.",
+        "target": 1,
+        "icon": "mountain"
+      },
+      {
+        "id": "odyssey_kingdom_12",
+        "name": "Bowser’s Bound",
+        "description": "Unlock the Bowser’s Kingdom.",
+        "target": 1,
+        "icon": "mountain"
+      },
+      {
+        "id": "odyssey_moons_12",
+        "name": "Bowser’s Collector",
+        "description": "Record 10 Power Moons in the Bowser’s Kingdom.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_kingdom_13",
+        "name": "Moon Bound",
+        "description": "Unlock the Moon Kingdom.",
+        "target": 1,
+        "icon": "mountain"
+      },
+      {
+        "id": "odyssey_moons_13",
+        "name": "Moon Collector",
+        "description": "Record 10 Power Moons in the Moon Kingdom.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_kingdom_14",
+        "name": "Mushroom Bound",
+        "description": "Unlock the Mushroom Kingdom.",
+        "target": 1,
+        "icon": "mountain"
+      },
+      {
+        "id": "odyssey_moons_14",
+        "name": "Mushroom Collector",
+        "description": "Record 10 Power Moons in the Mushroom Kingdom.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_moons_total_1",
+        "name": "1 Power Moons",
+        "description": "Reach 1 recorded Power Moons across the kingdoms.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_moons_total_10",
+        "name": "10 Power Moons",
+        "description": "Reach 10 recorded Power Moons across the kingdoms.",
+        "target": 10,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_moons_total_50",
+        "name": "50 Power Moons",
+        "description": "Reach 50 recorded Power Moons across the kingdoms.",
+        "target": 50,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_moons_total_100",
+        "name": "100 Power Moons",
+        "description": "Reach 100 recorded Power Moons across the kingdoms.",
+        "target": 100,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_moons_total_250",
+        "name": "250 Power Moons",
+        "description": "Reach 250 recorded Power Moons across the kingdoms.",
+        "target": 250,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_moons_total_500",
+        "name": "500 Power Moons",
+        "description": "Reach 500 recorded Power Moons across the kingdoms.",
+        "target": 500,
+        "icon": "star"
+      },
+      {
+        "id": "odyssey_moons_total_999",
+        "name": "999 Power Moons",
+        "description": "Reach 999 recorded Power Moons across the kingdoms.",
+        "target": 999,
+        "icon": "star"
+      }
+    ]
+  },
+  "pokopia": {
+    "name": "Pokémon Pokopia",
+    "color": "#e2bc64",
+    "matchNames": [
+      "pokémon pokopia",
+      "pokemon pokopia",
+      "recompia",
+      "pokopia"
+    ],
+    "achievements": [
+      {
+        "id": "pokopia_first_habitat",
+        "name": "First Habitat",
+        "description": "Make your first habitat.",
+        "target": 1,
+        "icon": "crown"
+      },
+      {
+        "id": "pokopia_first_friend",
+        "name": "First Friend",
+        "description": "Add your first Pokemon to the Pokedex.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "pokopia_growing_community",
+        "name": "Growing Community",
+        "description": "Have 25 Pokemon in your Pokedex.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "pokopia_bustling_island",
+        "name": "Bustling Island",
+        "description": "Have 100 Pokemon in your Pokedex.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "pokopia_full_house",
+        "name": "Full House",
+        "description": "Have 150 Pokemon in your Pokedex.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "pokopia_recipe_collector",
+        "name": "Recipe Collector",
+        "description": "Learn 100 recipes.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "pokopia_master_crafter",
+        "name": "Master Crafter",
+        "description": "Learn 250 recipes.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "pokopia_transformation_master",
+        "name": "Transformation Master",
+        "description": "Learn 10 moves.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "pokopia_habitat_creator",
+        "name": "Habitat Creator",
+        "description": "Make 5 kinds of habitat.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "pokopia_master_builder",
+        "name": "Master Builder",
+        "description": "Make 15 kinds of habitat.",
+        "target": 1,
+        "icon": "star"
+      },
+      {
+        "id": "pokopia_fertilizer_master",
+        "name": "Fertilizer Master",
+        "description": "Use Water Gun 50 times.",
+        "target": 1,
+        "icon": "star"
+      }
+    ]
+  }
+}

@@ -1,0 +1,534 @@
+[
+  {
+    "id": "reddit_calamity",
+    "name": "Calamity Adverted",
+    "description": "Defeat Calamity Ganon",
+    "target": 1,
+    "icon": "ganon"
+  },
+  {
+    "id": "reddit_wild",
+    "name": "Hero of the Wild",
+    "description": "Find the Green Tunic",
+    "target": 1,
+    "icon": "tunic"
+  },
+  {
+    "id": "reddit_first",
+    "name": "Your First Steps",
+    "description": "Leave the Shrine of Resurrection",
+    "target": 1,
+    "icon": "door"
+  },
+  {
+    "id": "reddit_prayer",
+    "name": "In Hylia’s name, amen",
+    "description": "Pray at a Goddess statue",
+    "target": 1,
+    "icon": "goddess"
+  },
+  {
+    "id": "reddit_cold",
+    "name": "Beat the Cold",
+    "description": "Get to the top of Mt. Hylia without the Warm Doublet",
+    "target": 1,
+    "icon": "snow"
+  },
+  {
+    "id": "reddit_plateau",
+    "name": "Welcome to Hyrule",
+    "description": "Leave the Great Plateau",
+    "target": 1,
+    "icon": "glider"
+  },
+  {
+    "id": "reddit_shiny",
+    "name": "Oooo, Shiny!",
+    "description": "Find your first non~rusted weapon",
+    "target": 1,
+    "icon": "spark_sword"
+  },
+  {
+    "id": "reddit_clean",
+    "name": "Can you clean this?",
+    "description": "Clean a rusted weapon or shield",
+    "target": 1,
+    "icon": "clean"
+  },
+  {
+    "id": "reddit_korok_first",
+    "name": "1 down, many to go",
+    "description": "Find your first Korok seed",
+    "target": 1,
+    "icon": "korok_1"
+  },
+  {
+    "id": "reddit_korok_half",
+    "name": "Halfway there!",
+    "description": "Find half of the Korok seeds",
+    "target": 1,
+    "icon": "korok_2"
+  },
+  {
+    "id": "reddit_korok_all",
+    "name": "A Special Gift",
+    "description": "Find all the Korok seeds",
+    "target": 1,
+    "icon": "gift"
+  },
+  {
+    "id": "reddit_weapons",
+    "name": "Weapons, maxed!",
+    "description": "Max out your weapon storage",
+    "target": 1,
+    "icon": "swords"
+  },
+  {
+    "id": "reddit_shields",
+    "name": "Shields, maxed!",
+    "description": "Max out your shield storage",
+    "target": 1,
+    "icon": "shield"
+  },
+  {
+    "id": "reddit_bows",
+    "name": "Bows, maxed!",
+    "description": "Max out your Bow storage",
+    "target": 1,
+    "icon": "quiver"
+  },
+  {
+    "id": "reddit_food",
+    "name": "Just a bit hungry",
+    "description": "Fill up all your food pages",
+    "target": 1,
+    "icon": "food"
+  },
+  {
+    "id": "reddit_work",
+    "name": "Hard days work",
+    "description": "Hunt, fish, mine and cook a meal",
+    "target": 1,
+    "icon": "pickaxe"
+  },
+  {
+    "id": "reddit_home",
+    "name": "Hylian home owner",
+    "description": "Own a home in Hyrule",
+    "target": 1,
+    "icon": "home"
+  },
+  {
+    "id": "reddit_shrines30",
+    "name": "Shrine Delver",
+    "description": "Complete 30 Shrines",
+    "target": 30,
+    "icon": "shrine_1"
+  },
+  {
+    "id": "reddit_shrines60",
+    "name": "Shrine Seeker",
+    "description": "Complete 60 Shrines",
+    "target": 60,
+    "icon": "shrine_2"
+  },
+  {
+    "id": "reddit_shrines90",
+    "name": "Shrine Adventurer",
+    "description": "Complete 90 Shrines",
+    "target": 90,
+    "icon": "shrine_3"
+  },
+  {
+    "id": "reddit_shrines_all",
+    "name": "Shrine Master",
+    "description": "Complete all Shrines",
+    "target": 1,
+    "icon": "shrine_4"
+  },
+  {
+    "id": "reddit_towers_half",
+    "name": "Hyrule Explorer",
+    "description": "Restore half the Towers of Hyrule",
+    "target": 1,
+    "icon": "tower_1"
+  },
+  {
+    "id": "reddit_towers_all",
+    "name": "Hyrule Expert",
+    "description": "Restore all the Towers of Hyrule",
+    "target": 1,
+    "icon": "tower_2"
+  },
+  {
+    "id": "reddit_ruta",
+    "name": "Vah Ruta restored!",
+    "description": "Re~capture Vah Ruta from Calamity Ganon",
+    "target": 1,
+    "icon": "elephant"
+  },
+  {
+    "id": "reddit_rudania",
+    "name": "Vah Rudania restored!",
+    "description": "Re~capture Vah Rudania from Calamity Ganon",
+    "target": 1,
+    "icon": "lizard"
+  },
+  {
+    "id": "reddit_medo",
+    "name": "Vah Medo restored!",
+    "description": "Re~capture Vah Medo from Calamity Ganon",
+    "target": 1,
+    "icon": "bird"
+  },
+  {
+    "id": "reddit_naborris",
+    "name": "Vah Naborris restored!",
+    "description": "Re~capture Vah Naborris from Calamity Ganon",
+    "target": 1,
+    "icon": "camel"
+  },
+  {
+    "id": "reddit_solo",
+    "name": "No help needed",
+    "description": "Defeat Calamity Ganon without any help",
+    "target": 1,
+    "icon": "solo"
+  },
+  {
+    "id": "reddit_memory_first",
+    "name": "I remember that!",
+    "description": "Recall a memory",
+    "target": 1,
+    "icon": "memory_1"
+  },
+  {
+    "id": "reddit_memory_half",
+    "name": "Memory Seeker",
+    "description": "Recall half of your memories",
+    "target": 1,
+    "icon": "memory_2"
+  },
+  {
+    "id": "reddit_memory_all",
+    "name": "Amnesia, no more",
+    "description": "Recall all your memories",
+    "target": 1,
+    "icon": "memory_3"
+  },
+  {
+    "id": "reddit_bomb25",
+    "name": "Bomb Novice",
+    "description": "Defeat 25 enemies with bombs",
+    "target": 25,
+    "icon": "bomb_1"
+  },
+  {
+    "id": "reddit_bomb50",
+    "name": "Bomb Expert",
+    "description": "Defeat 50 enemies with bombs",
+    "target": 50,
+    "icon": "bomb_2"
+  },
+  {
+    "id": "reddit_bomb75",
+    "name": "Bomb Master",
+    "description": "Defeat 75 enemies with bombs",
+    "target": 75,
+    "icon": "bomb_3"
+  },
+  {
+    "id": "reddit_stasis25",
+    "name": "Stasis Novice",
+    "description": "Freeze 25 enemies",
+    "target": 25,
+    "icon": "stasis_1"
+  },
+  {
+    "id": "reddit_stasis50",
+    "name": "Stasis Expert",
+    "description": "Freeze 50 enemies",
+    "target": 50,
+    "icon": "stasis_2"
+  },
+  {
+    "id": "reddit_stasis75",
+    "name": "Stasis Master",
+    "description": "Freeze 75 enemies",
+    "target": 75,
+    "icon": "stasis_3"
+  },
+  {
+    "id": "reddit_horse",
+    "name": "Horse Trainer",
+    "description": "Capture a Wild horse",
+    "target": 1,
+    "icon": "horse"
+  },
+  {
+    "id": "reddit_stable",
+    "name": "Horse Master",
+    "description": "Fill out your stable storage",
+    "target": 1,
+    "icon": "stable"
+  },
+  {
+    "id": "reddit_white_horse",
+    "name": "The White Horse",
+    "description": "Find and register the elusive White Horse",
+    "target": 1,
+    "icon": "whitehorse"
+  },
+  {
+    "id": "reddit_giant_horse",
+    "name": "Just a tad big!",
+    "description": "Find and register the Giant Horse",
+    "target": 1,
+    "icon": "gianthorse"
+  },
+  {
+    "id": "reddit_satori",
+    "name": "Lord of the Mountain",
+    "description": "Find this elusive beast",
+    "target": 1,
+    "icon": "satori"
+  },
+  {
+    "id": "reddit_deer",
+    "name": "Oh deer!",
+    "description": "Ride a deer",
+    "target": 1,
+    "icon": "deer"
+  },
+  {
+    "id": "reddit_bear",
+    "name": "Bear with me",
+    "description": "Ride a bear",
+    "target": 1,
+    "icon": "bear"
+  },
+  {
+    "id": "reddit_seal",
+    "name": "Seal the deal",
+    "description": "Use a sand seal",
+    "target": 1,
+    "icon": "seal"
+  },
+  {
+    "id": "reddit_sword_boss",
+    "name": "Live by the Sword",
+    "description": "Defeat a boss using only a sword",
+    "target": 1,
+    "icon": "sword"
+  },
+  {
+    "id": "reddit_bow150",
+    "name": "Bow Master",
+    "description": "Defeat 150 enemies with a bow",
+    "target": 150,
+    "icon": "bow"
+  },
+  {
+    "id": "reddit_traveller",
+    "name": "The traveller",
+    "description": "Wear what a traveller would wear",
+    "target": 1,
+    "icon": "backpack"
+  },
+  {
+    "id": "reddit_champion",
+    "name": "The Champion of Hyrule",
+    "description": "Acquire the Champion’s tunic",
+    "target": 1,
+    "icon": "champion"
+  },
+  {
+    "id": "reddit_hylian",
+    "name": "The Clothes of my People",
+    "description": "Acquire all Hylian Armor",
+    "target": 1,
+    "icon": "hylian"
+  },
+  {
+    "id": "reddit_zora",
+    "name": "Swim like a Zora",
+    "description": "Acquire all Zora Armor",
+    "target": 1,
+    "icon": "zora"
+  },
+  {
+    "id": "reddit_gorons",
+    "name": "Fight like a Goron",
+    "description": "Acquire all Goron Armor",
+    "target": 1,
+    "icon": "goron"
+  },
+  {
+    "id": "reddit_rito",
+    "name": "Fly like a Rito",
+    "description": "Acquire all Rito Armor",
+    "target": 1,
+    "icon": "rito"
+  },
+  {
+    "id": "reddit_gerudo",
+    "name": "Move like a Gerudo",
+    "description": "Acquire all Gerudo Armor",
+    "target": 1,
+    "icon": "gerudo"
+  },
+  {
+    "id": "reddit_armor_half",
+    "name": "Well fitted",
+    "description": "Max out half of the Armor pieces",
+    "target": 1,
+    "icon": "armor_1"
+  },
+  {
+    "id": "reddit_armor_all",
+    "name": "Tailor made",
+    "description": "Max out all Armor pieces",
+    "target": 1,
+    "icon": "armor_2"
+  },
+  {
+    "id": "reddit_zora_help",
+    "name": "Aiding Royalty",
+    "description": "Help the Zoras",
+    "target": 1,
+    "icon": "crown"
+  },
+  {
+    "id": "reddit_gorons_help",
+    "name": "Helping a brother in need",
+    "description": "Help the Gorons",
+    "target": 1,
+    "icon": "fist"
+  },
+  {
+    "id": "reddit_rito_help",
+    "name": "In flight",
+    "description": "Help the Rito",
+    "target": 1,
+    "icon": "feather"
+  },
+  {
+    "id": "reddit_gerudo_help",
+    "name": "One of you",
+    "description": "Help the Gerudo",
+    "target": 1,
+    "icon": "desert"
+  },
+  {
+    "id": "reddit_princess",
+    "name": "Welllllll, excussseeeee meeee Princess!",
+    "description": "Interrupt Zelda while she is talking",
+    "target": 1,
+    "icon": "speech"
+  },
+  {
+    "id": "reddit_rescue",
+    "name": "Guardian Angel",
+    "description": "Save someone from an attack",
+    "target": 1,
+    "icon": "angel"
+  },
+  {
+    "id": "reddit_trade",
+    "name": "To trade and barter",
+    "description": "Buy and sell to a merchant",
+    "target": 1,
+    "icon": "trade"
+  },
+  {
+    "id": "reddit_flurry",
+    "name": "I like to rush!",
+    "description": "Do a flurry rush 50 times",
+    "target": 50,
+    "icon": "flurry"
+  },
+  {
+    "id": "reddit_guardian",
+    "name": "Guardian Killer",
+    "description": "Defeat your first Guardian",
+    "target": 1,
+    "icon": "guardian"
+  },
+  {
+    "id": "reddit_friend",
+    "name": "A Link between worlds",
+    "description": "Call an old friend for help",
+    "target": 1,
+    "icon": "wolf"
+  },
+  {
+    "id": "reddit_ranch",
+    "name": "The old Ranch",
+    "description": "Go and pay your respects",
+    "target": 1,
+    "icon": "ranch"
+  },
+  {
+    "id": "reddit_master_sword",
+    "name": "The Sword that seals the Darkness",
+    "description": "Pull out the Sword of Legend",
+    "target": 1,
+    "icon": "master_sword"
+  },
+  {
+    "id": "reddit_fairies",
+    "name": "The Great Fairies",
+    "description": "Find and rescue the Great Fairies of Hyrule",
+    "target": 1,
+    "icon": "fairy"
+  },
+  {
+    "id": "reddit_horse_god",
+    "name": "The Horse God",
+    "description": "Meet the Horse God",
+    "target": 1,
+    "icon": "horse_god"
+  },
+  {
+    "id": "reddit_eventide",
+    "name": "Cast Away",
+    "description": "Survive Eventide Island",
+    "target": 1,
+    "icon": "island"
+  },
+  {
+    "id": "reddit_highest",
+    "name": "Isn’t it cold up there?",
+    "description": "Climb to the highest point in Hyrule",
+    "target": 1,
+    "icon": "mountain"
+  },
+  {
+    "id": "reddit_no_deaths",
+    "name": "The True hero",
+    "description": "Beat The Legend of Zelda: Breath of the Wild without dying once",
+    "target": 1,
+    "icon": "heart"
+  },
+  {
+    "id": "reddit_recipes",
+    "name": "Master Chef",
+    "description": "Create every recipe",
+    "target": 1,
+    "icon": "chef"
+  },
+  {
+    "id": "reddit_wallet",
+    "name": "Long term investment",
+    "description": "Max out your wallet",
+    "target": 1,
+    "icon": "rupee"
+  },
+  {
+    "id": "reddit_explore",
+    "name": "No stone Unturned",
+    "description": "Explore all of Hyrule",
+    "target": 1,
+    "icon": "map"
+  }
+]

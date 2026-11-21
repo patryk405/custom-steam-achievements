@@ -1,0 +1,966 @@
+{
+  "schema": 1,
+  "id": "oot-longshot",
+  "title": "The Hero of Time Collection",
+  "game": "oot",
+  "version": "0.2.0",
+  "author": "Custom Steam Achievements",
+  "description": "66 automatic objectives for Longshot 3.0.0: Spiritual Stones, medallions, songs, equipment and collectibles. Starter objectives verified in gameplay; the expanded set is schema-checked and awaits full playthrough testing. Final Ganon victory is not included.",
+  "achievements": [
+    {
+      "id": "oot_first_steps",
+      "name": "First Steps",
+      "description": "Walk 5 metres during gameplay.",
+      "target": 5,
+      "icon": "mountain"
+    },
+    {
+      "id": "oot_pocket_change",
+      "name": "Pocket Change",
+      "description": "Have at least 1 Rupee in your wallet.",
+      "target": 1,
+      "icon": "gem"
+    },
+    {
+      "id": "oot_emerald",
+      "name": "Kokiri Emerald",
+      "description": "Obtain the Kokiri Emerald.",
+      "target": 1,
+      "icon": "gem"
+    },
+    {
+      "id": "oot_ruby",
+      "name": "Goron Ruby",
+      "description": "Obtain the Goron Ruby.",
+      "target": 1,
+      "icon": "gem"
+    },
+    {
+      "id": "oot_sapphire",
+      "name": "Zora Sapphire",
+      "description": "Obtain the Zora Sapphire.",
+      "target": 1,
+      "icon": "gem"
+    },
+    {
+      "id": "oot_medal_light",
+      "name": "Light Medallion",
+      "description": "Obtain the Light Medallion.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "oot_medal_forest",
+      "name": "Forest Medallion",
+      "description": "Obtain the Forest Medallion.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "oot_medal_fire",
+      "name": "Fire Medallion",
+      "description": "Obtain the Fire Medallion.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "oot_medal_water",
+      "name": "Water Medallion",
+      "description": "Obtain the Water Medallion.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "oot_medal_shadow",
+      "name": "Shadow Medallion",
+      "description": "Obtain the Shadow Medallion.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "oot_medal_spirit",
+      "name": "Spirit Medallion",
+      "description": "Obtain the Spirit Medallion.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "oot_kokiri_sword",
+      "name": "A Sword of Your Own",
+      "description": "Obtain the Kokiri Sword.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "oot_master_sword",
+      "name": "Hero of Time",
+      "description": "Obtain the Master Sword.",
+      "target": 1,
+      "icon": "master_sword"
+    },
+    {
+      "id": "oot_biggoron",
+      "name": "Forged by a Giant",
+      "description": "Obtain the Biggoron’s Sword.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "oot_deku_shield",
+      "name": "Ready for Adventure",
+      "description": "Obtain the Deku Shield.",
+      "target": 1,
+      "icon": "shield"
+    },
+    {
+      "id": "oot_mirror",
+      "name": "Reflect on This",
+      "description": "Obtain the Mirror Shield.",
+      "target": 1,
+      "icon": "shield"
+    },
+    {
+      "id": "oot_slingshot",
+      "name": "Fairy Marksman",
+      "description": "Obtain the Fairy Slingshot.",
+      "target": 1,
+      "icon": "bow"
+    },
+    {
+      "id": "oot_bombs",
+      "name": "A Blast of Possibilities",
+      "description": "Obtain the Bomb Bag.",
+      "target": 1,
+      "icon": "bomb"
+    },
+    {
+      "id": "oot_boomerang",
+      "name": "Right Back at You",
+      "description": "Obtain the Boomerang.",
+      "target": 1,
+      "icon": "trade"
+    },
+    {
+      "id": "oot_bow",
+      "name": "Fairy Archer",
+      "description": "Obtain the Fairy Bow.",
+      "target": 1,
+      "icon": "bow"
+    },
+    {
+      "id": "oot_hookshot",
+      "name": "Reach for It",
+      "description": "Obtain the Hookshot.",
+      "target": 1,
+      "icon": "tower"
+    },
+    {
+      "id": "oot_longshot",
+      "name": "A Little Further",
+      "description": "Obtain the Longshot.",
+      "target": 1,
+      "icon": "tower"
+    },
+    {
+      "id": "oot_hammer",
+      "name": "Megaton Power",
+      "description": "Obtain the Megaton Hammer.",
+      "target": 1,
+      "icon": "fist"
+    },
+    {
+      "id": "oot_lens",
+      "name": "Seeing Is Believing",
+      "description": "Obtain the Lens of Truth.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "oot_iron_boots",
+      "name": "Heavy Footsteps",
+      "description": "Obtain the Iron Boots.",
+      "target": 1,
+      "icon": "armor"
+    },
+    {
+      "id": "oot_hover_boots",
+      "name": "Walk on Air",
+      "description": "Obtain the Hover Boots.",
+      "target": 1,
+      "icon": "feather"
+    },
+    {
+      "id": "oot_goron_tunic",
+      "name": "Too Hot to Handle",
+      "description": "Obtain the Goron Tunic.",
+      "target": 1,
+      "icon": "goron"
+    },
+    {
+      "id": "oot_zora_tunic",
+      "name": "Under the Surface",
+      "description": "Obtain the Zora Tunic.",
+      "target": 1,
+      "icon": "zora"
+    },
+    {
+      "id": "oot_silver_gauntlets",
+      "name": "Silver Strength",
+      "description": "Obtain the Silver Gauntlets.",
+      "target": 1,
+      "icon": "fist"
+    },
+    {
+      "id": "oot_gold_gauntlets",
+      "name": "Golden Strength",
+      "description": "Obtain the Golden Gauntlets.",
+      "target": 1,
+      "icon": "fist"
+    },
+    {
+      "id": "oot_fire_arrow",
+      "name": "Fire and Flight",
+      "description": "Obtain the Fire Arrows.",
+      "target": 1,
+      "icon": "bow"
+    },
+    {
+      "id": "oot_ice_arrow",
+      "name": "Ice and Flight",
+      "description": "Obtain the Ice Arrows.",
+      "target": 1,
+      "icon": "snow"
+    },
+    {
+      "id": "oot_light_arrow",
+      "name": "Light Against Darkness",
+      "description": "Obtain the Light Arrows.",
+      "target": 1,
+      "icon": "bow"
+    },
+    {
+      "id": "oot_ocarina",
+      "name": "An Instrument of Time",
+      "description": "Obtain the Ocarina of Time.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "oot_song_zeldalullaby",
+      "name": "Zelda’s Lullaby",
+      "description": "Learn Zelda’s Lullaby.",
+      "target": 1,
+      "icon": "memory"
+    },
+    {
+      "id": "oot_song_eponasong",
+      "name": "Epona’s Song",
+      "description": "Learn Epona’s Song.",
+      "target": 1,
+      "icon": "memory"
+    },
+    {
+      "id": "oot_song_sariasong",
+      "name": "Saria’s Song",
+      "description": "Learn Saria’s Song.",
+      "target": 1,
+      "icon": "memory"
+    },
+    {
+      "id": "oot_song_sunsong",
+      "name": "Sun’s Song",
+      "description": "Learn Sun’s Song.",
+      "target": 1,
+      "icon": "memory"
+    },
+    {
+      "id": "oot_song_timesong",
+      "name": "Song of Time",
+      "description": "Learn Song of Time.",
+      "target": 1,
+      "icon": "memory"
+    },
+    {
+      "id": "oot_song_stormsong",
+      "name": "Song of Storms",
+      "description": "Learn Song of Storms.",
+      "target": 1,
+      "icon": "memory"
+    },
+    {
+      "id": "oot_song_forestminuet",
+      "name": "Minuet of Forest",
+      "description": "Learn Minuet of Forest.",
+      "target": 1,
+      "icon": "memory"
+    },
+    {
+      "id": "oot_song_firebolero",
+      "name": "Bolero of Fire",
+      "description": "Learn Bolero of Fire.",
+      "target": 1,
+      "icon": "memory"
+    },
+    {
+      "id": "oot_song_waterserenade",
+      "name": "Serenade of Water",
+      "description": "Learn Serenade of Water.",
+      "target": 1,
+      "icon": "memory"
+    },
+    {
+      "id": "oot_song_shadownocturne",
+      "name": "Nocturne of Shadow",
+      "description": "Learn Nocturne of Shadow.",
+      "target": 1,
+      "icon": "memory"
+    },
+    {
+      "id": "oot_song_spiritrequiem",
+      "name": "Requiem of Spirit",
+      "description": "Learn Requiem of Spirit.",
+      "target": 1,
+      "icon": "memory"
+    },
+    {
+      "id": "oot_song_lightprelude",
+      "name": "Prelude of Light",
+      "description": "Learn Prelude of Light.",
+      "target": 1,
+      "icon": "memory"
+    },
+    {
+      "id": "oot_din",
+      "name": "A Fiery Gift",
+      "description": "Obtain the Din’s Fire.",
+      "target": 1,
+      "icon": "lizard"
+    },
+    {
+      "id": "oot_farore",
+      "name": "A Windy Escape",
+      "description": "Obtain the Farore’s Wind.",
+      "target": 1,
+      "icon": "feather"
+    },
+    {
+      "id": "oot_nayru",
+      "name": "Love Is a Shield",
+      "description": "Obtain the Nayru’s Love.",
+      "target": 1,
+      "icon": "shield"
+    },
+    {
+      "id": "oot_magic",
+      "name": "A Touch of Magic",
+      "description": "Obtain the magic meter.",
+      "target": 1,
+      "icon": "fairy"
+    },
+    {
+      "id": "oot_double_magic",
+      "name": "More Magic",
+      "description": "Obtain the double magic meter.",
+      "target": 1,
+      "icon": "fairy"
+    },
+    {
+      "id": "oot_defense",
+      "name": "Blessed Protection",
+      "description": "Obtain the double defense upgrade.",
+      "target": 1,
+      "icon": "heart"
+    },
+    {
+      "id": "oot_truth",
+      "name": "Behind the Mask",
+      "description": "Obtain the Mask of Truth.",
+      "target": 1,
+      "icon": "speech"
+    },
+    {
+      "id": "oot_gerudo",
+      "name": "One of the Gerudo",
+      "description": "Obtain the Gerudo Membership Card.",
+      "target": 1,
+      "icon": "gerudo"
+    },
+    {
+      "id": "oot_wallet",
+      "name": "Room for Riches",
+      "description": "Obtain the Giant’s Wallet.",
+      "target": 1,
+      "icon": "rupee"
+    },
+    {
+      "id": "oot_skulltulas_1",
+      "name": "Gold Hunter · 1",
+      "description": "Collect 1 Gold Skulltula token.",
+      "target": 1,
+      "icon": "guardian"
+    },
+    {
+      "id": "oot_skulltulas_10",
+      "name": "Gold Hunter · 10",
+      "description": "Collect 10 Gold Skulltula tokens.",
+      "target": 10,
+      "icon": "guardian"
+    },
+    {
+      "id": "oot_skulltulas_30",
+      "name": "Gold Hunter · 30",
+      "description": "Collect 30 Gold Skulltula tokens.",
+      "target": 30,
+      "icon": "guardian"
+    },
+    {
+      "id": "oot_skulltulas_50",
+      "name": "Gold Hunter · 50",
+      "description": "Collect 50 Gold Skulltula tokens.",
+      "target": 50,
+      "icon": "guardian"
+    },
+    {
+      "id": "oot_skulltulas_100",
+      "name": "Curse Breaker",
+      "description": "Collect 100 Gold Skulltula tokens.",
+      "target": 100,
+      "icon": "guardian"
+    },
+    {
+      "id": "oot_hearts_10",
+      "name": "10 Hearts Strong",
+      "description": "Reach 10 heart containers of maximum health.",
+      "target": 10,
+      "icon": "heart"
+    },
+    {
+      "id": "oot_hearts_20",
+      "name": "20 Hearts Strong",
+      "description": "Reach 20 heart containers of maximum health.",
+      "target": 20,
+      "icon": "heart"
+    },
+    {
+      "id": "oot_three_stones",
+      "name": "The Spiritual Stones",
+      "description": "Obtain all three Spiritual Stones.",
+      "target": 1,
+      "icon": "triforce"
+    },
+    {
+      "id": "oot_six_medals",
+      "name": "Awakening the Sages",
+      "description": "Obtain all six medallions.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "oot_all_songs",
+      "name": "Hyrule’s Songbook",
+      "description": "Learn all twelve main ocarina songs.",
+      "target": 1,
+      "icon": "memory"
+    },
+    {
+      "id": "oot_three_spells",
+      "name": "Gifts of the Goddesses",
+      "description": "Obtain Din’s Fire, Farore’s Wind and Nayru’s Love.",
+      "target": 1,
+      "icon": "fairy"
+    }
+  ],
+  "rules": {
+    "oot_first_steps": {
+      "op": "number",
+      "flags": [
+        "live:distance"
+      ],
+      "threshold": 5,
+      "note": "Walk 5 metres in one session. Loading and teleports do not count."
+    },
+    "oot_pocket_change": {
+      "op": "number",
+      "flags": [
+        "rupees"
+      ],
+      "threshold": 1,
+      "note": "Have at least 1 Rupee; an existing wallet balance also counts."
+    },
+    "oot_emerald": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Stone_Forest"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_ruby": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Stone_Fire"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_sapphire": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Stone_Water"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_medal_light": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Medal_Light"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_medal_forest": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Medal_Forest"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_medal_fire": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Medal_Fire"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_medal_water": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Medal_Water"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_medal_shadow": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Medal_Shadow"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_medal_spirit": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Medal_Spirit"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_kokiri_sword": {
+      "op": "all",
+      "flags": [
+        "IsGet.Weapon_Sword_Kokiri"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_master_sword": {
+      "op": "all",
+      "flags": [
+        "IsGet.Weapon_Sword_Master"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_biggoron": {
+      "op": "all",
+      "flags": [
+        "IsGet.Weapon_Sword_Biggoron"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_deku_shield": {
+      "op": "all",
+      "flags": [
+        "IsGet.Weapon_Shield_Deku"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_mirror": {
+      "op": "all",
+      "flags": [
+        "IsGet.Weapon_Shield_Mirror"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_slingshot": {
+      "op": "all",
+      "flags": [
+        "IsGet.Weapon_Range_SlingShot"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_bombs": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_BombBag_Small"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_boomerang": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Boomerang"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_bow": {
+      "op": "all",
+      "flags": [
+        "IsGet.Weapon_Range_Bow"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_hookshot": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Hookshot"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_longshot": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Longshot"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_hammer": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Hammer"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_lens": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_GlassTruth"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_iron_boots": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_Adult_HeavyBoot"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_hover_boots": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_Adult_HoverBoot"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_goron_tunic": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_Adult_Goron"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_zora_tunic": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_Adult_Zora"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_silver_gauntlets": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_Adult_Gauntlet_Silver"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_gold_gauntlets": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_Adult_Gauntlet_Gold"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_fire_arrow": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Arrow_Fire"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_ice_arrow": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Arrow_Ice"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_light_arrow": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Arrow_Light"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_ocarina": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Ocarina_Time"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_zeldalullaby": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_ZeldaLullaby"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_eponasong": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_EponaSong"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_sariasong": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_SariaSong"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_sunsong": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_SunSong"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_timesong": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_TimeSong"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_stormsong": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_StormSong"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_forestminuet": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_ForestMinuet"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_firebolero": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_FireBolero"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_waterserenade": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_WaterSerenade"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_shadownocturne": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_ShadowNocturne"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_spiritrequiem": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_SpiritRequiem"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_song_lightprelude": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_LightPrelude"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_din": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_DinFire"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_farore": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_FaroreWind"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_nayru": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_NayruLove"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_magic": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_FairyBless_MP"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_double_magic": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_FairyBless_MPDouble"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_defense": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_FairyBless_DefenseDouble"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_truth": {
+      "op": "all",
+      "flags": [
+        "IsGet.Armor_Child_Mask_Truth"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_gerudo": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Token_Gerudo"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_wallet": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Wallet_Large"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_skulltulas_1": {
+      "op": "number",
+      "flags": [
+        "PouchData.Item_Token_Gold.StockNum"
+      ],
+      "note": "Detected live from Longshot game progress.",
+      "threshold": 1
+    },
+    "oot_skulltulas_10": {
+      "op": "number",
+      "flags": [
+        "PouchData.Item_Token_Gold.StockNum"
+      ],
+      "note": "Detected live from Longshot game progress.",
+      "threshold": 10
+    },
+    "oot_skulltulas_30": {
+      "op": "number",
+      "flags": [
+        "PouchData.Item_Token_Gold.StockNum"
+      ],
+      "note": "Detected live from Longshot game progress.",
+      "threshold": 30
+    },
+    "oot_skulltulas_50": {
+      "op": "number",
+      "flags": [
+        "PouchData.Item_Token_Gold.StockNum"
+      ],
+      "note": "Detected live from Longshot game progress.",
+      "threshold": 50
+    },
+    "oot_skulltulas_100": {
+      "op": "number",
+      "flags": [
+        "PouchData.Item_Token_Gold.StockNum"
+      ],
+      "note": "Detected live from Longshot game progress.",
+      "threshold": 100
+    },
+    "oot_hearts_10": {
+      "op": "number",
+      "flags": [
+        "max_life"
+      ],
+      "note": "Detected live from Longshot game progress.",
+      "threshold": 40
+    },
+    "oot_hearts_20": {
+      "op": "number",
+      "flags": [
+        "max_life"
+      ],
+      "note": "Detected live from Longshot game progress.",
+      "threshold": 80
+    },
+    "oot_three_stones": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Stone_Forest",
+        "IsGet.Item_Stone_Fire",
+        "IsGet.Item_Stone_Water"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_six_medals": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Medal_Light",
+        "IsGet.Item_Medal_Forest",
+        "IsGet.Item_Medal_Fire",
+        "IsGet.Item_Medal_Water",
+        "IsGet.Item_Medal_Shadow",
+        "IsGet.Item_Medal_Spirit"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_all_songs": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_Melody_ZeldaLullaby",
+        "IsGet.Item_Melody_EponaSong",
+        "IsGet.Item_Melody_SariaSong",
+        "IsGet.Item_Melody_SunSong",
+        "IsGet.Item_Melody_TimeSong",
+        "IsGet.Item_Melody_StormSong",
+        "IsGet.Item_Melody_ForestMinuet",
+        "IsGet.Item_Melody_FireBolero",
+        "IsGet.Item_Melody_WaterSerenade",
+        "IsGet.Item_Melody_ShadowNocturne",
+        "IsGet.Item_Melody_SpiritRequiem",
+        "IsGet.Item_Melody_LightPrelude"
+      ],
+      "note": "Detected live from Longshot game progress."
+    },
+    "oot_three_spells": {
+      "op": "all",
+      "flags": [
+        "IsGet.Item_DinFire",
+        "IsGet.Item_FaroreWind",
+        "IsGet.Item_NayruLove"
+      ],
+      "note": "Detected live from Longshot game progress."
+    }
+  }
+}

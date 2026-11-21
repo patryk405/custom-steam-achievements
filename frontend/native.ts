@@ -1,0 +1,28 @@
+// Native classes from the installed Steam desktop client.
+export const native = {
+  "section": "_2r4TK4BAuU-J4FuF_O7v_5 AppDetailsSection Panel",
+  "header": "_3A_c3YHYd4YIjA8Y-olnPl Reset _1Q2q_tQ9_Eq8YdEHNAHS3F SectionHeader _3jY6xWI4URhFyYsanh9VKL PadLeft",
+  "headerLabel": "_1SQ30LQnUhED7sXI79rmas Label",
+  "headerText": "_3i0kopAostOz2IDi9HqmeN LabelText",
+  "container": "_31ptFGGMZrSQc5BCX1e5lm AppDetailsSectionContainer _2G5B7o_YoI__u11--EFjal AppDetailsSectionHasLabel _3KfxIwlXEvum7FCD_AM2_t RightColumnSection Panel",
+  "highlight": "_38t1mljBjmJfqjpVzMT1CG Highlight _2xTb6N-jUUQ-mIkMB6OVMm HighlightDiv",
+  "count": "_3jC8om-5Sci_dkUB-6VYiU UnlockedLabel",
+  "percent": "_14kZVEyaz7WX57N47z4Yr1 UnlockedLabelPercent",
+  "progressRow": "_1SYKvWwSL8VCFp-KXZyjXf ProgressRow",
+  "progressBox": "_2YzOLNBx6TonKU0Zmp20l4 Box _3A_c3YHYd4YIjA8Y-olnPl Reset _6MT2UJrz5bk1FX-saHB-i ProgressBar",
+  "track": "_1u7tlq5OcUVR8p7-ic_ZVw Height _2RYinm9bxw0vanLueNM8f- Radius-lg _1i6AhxSEgz1FAUyiEt1Xsk Background _2TSlFWDDfIzDdGWNXFfeFV Overflow _16FZUyKiH6Z7trthKypJwf Columns _2IVd64AHN6R428cgcPqW7M Grid",
+  "fill": "_2YzOLNBx6TonKU0Zmp20l4 Box _3A_c3YHYd4YIjA8Y-olnPl Reset _3WOeX9PHv29FSw4EKlG77h Unlocked",
+  "empty": "_2YzOLNBx6TonKU0Zmp20l4 Box _3A_c3YHYd4YIjA8Y-olnPl Reset",
+  "body": "_5uvIN6jXDXzzck59F-nhv Body",
+  "icons": "_16FZUyKiH6Z7trthKypJwf Columns _2QdiX1hDsJmlkrHmcCOMbV Rows c0C2uHpDLCegllhH1rM3M Gap _2IVd64AHN6R428cgcPqW7M Grid _1rvHQ_ELBAWYmrssg3iNZE IconRow",
+  "icon": "_1DmdUWkRKPlUYGtbBrrRtx AchievementIconWrapper _2n0TdOfLVYm6b3t8KGdTDB Clickable",
+  "featured": "_1j_gja8bHXjiS-BeSQk8hb Featured _14U8eM1W6Z4uJhCc5zvbKC RightAchievementSection _1kc4TgmEn0m_6CTZ-G6XBr Clickable Panel",
+  "featuredIcon": "_1DmdUWkRKPlUYGtbBrrRtx AchievementIconWrapper zcasgBSVIteabq-j_3g1m Icon",
+  "featuredText": "_1s_9cSxUjb4609MSH0EjWH TextSection",
+  "name": "_39Y01uSRcLiDg5DneTTR0m Name",
+  "desc": "_2gLHbXukQBdrIKhqEYVvOe Desc",
+  "lockedSection": "_3ca11X3AK6npLS3emMa5Lr UnachievedSection",
+  "divider": "_3i6PczGBBYzCDZXkCDbJAD ShowDivider",
+  "label": "uoFNFZ7Hs5cF1IjP2fvPw Label",
+  "button": "_3Cdin80d-hVsakHUZboheb AppDetailsButton _3nJyYxGQ3kdwwabPmxNnMe BottomRight DialogButton _DialogLayout Secondary Focusable"
+};

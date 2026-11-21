@@ -1,0 +1,400 @@
+{
+  "schema": 1,
+  "id": "arceus-v1",
+  "game": "arceus",
+  "kind": "arceus-save",
+  "root": "",
+  "glob": "main",
+  "rules": {
+    "arceus_expeditionteamrank1": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank2": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 2,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank3": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 3,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank4": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 4,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank5": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 5,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank6": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 6,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank7": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 7,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank8": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 8,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank9": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 9,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank10": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_canridewyrdeer": {
+      "op": "any",
+      "flags": [
+        "block:47365FE8"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_canrideursaluna": {
+      "op": "any",
+      "flags": [
+        "block:4736634E"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_canridebasculegion": {
+      "op": "any",
+      "flags": [
+        "block:473666B4"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_canridesneasler": {
+      "op": "any",
+      "flags": [
+        "block:47366A1A"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_canridebraviary": {
+      "op": "any",
+      "flags": [
+        "block:47334812"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_defeatedlordkleavor": {
+      "op": "any",
+      "flags": [
+        "block:96774421"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_defeatedladylilligant": {
+      "op": "any",
+      "flags": [
+        "block:3A50000C"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_defeatedlordarcanine": {
+      "op": "any",
+      "flags": [
+        "block:A5981A37"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_defeatedlordelectrode": {
+      "op": "any",
+      "flags": [
+        "block:6EF3C712"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_defeatedlordavalugg": {
+      "op": "any",
+      "flags": [
+        "block:424E9F0D"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_defeatedarceus": {
+      "op": "any",
+      "flags": [
+        "block:2F91EFD3"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_completedpokedex": {
+      "op": "any",
+      "flags": [
+        "block:D985E1C2"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_perfectedpokedex": {
+      "op": "any",
+      "flags": [
+        "block:98ED661E"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_unlockedlostandfound": {
+      "op": "any",
+      "flags": [
+        "block:FE837926"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_unlockedmassrelease": {
+      "op": "any",
+      "flags": [
+        "block:0C16BEF4"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_unlockeddistortions": {
+      "op": "any",
+      "flags": [
+        "block:7611BFC3"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_totalunowncaptured1": {
+      "op": "number",
+      "flags": [
+        "block:3EBEE1A7"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_totalunowncaptured28": {
+      "op": "number",
+      "flags": [
+        "block:3EBEE1A7"
+      ],
+      "threshold": 28,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_wispsfoundtotal1": {
+      "op": "number",
+      "flags": [
+        "block:B79EF1FE"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_wispsfoundtotal30": {
+      "op": "number",
+      "flags": [
+        "block:B79EF1FE"
+      ],
+      "threshold": 30,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_wispsfoundtotal60": {
+      "op": "number",
+      "flags": [
+        "block:B79EF1FE"
+      ],
+      "threshold": 60,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_wispsfoundtotal107": {
+      "op": "number",
+      "flags": [
+        "block:B79EF1FE"
+      ],
+      "threshold": 107,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_satchelupgrades1": {
+      "op": "number",
+      "flags": [
+        "block:75CE2CF6"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_satchelupgrades10": {
+      "op": "number",
+      "flags": [
+        "block:75CE2CF6"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_satchelupgrades39": {
+      "op": "number",
+      "flags": [
+        "block:75CE2CF6"
+      ],
+      "threshold": 39,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_recordlostsatchelsfound1": {
+      "op": "number",
+      "flags": [
+        "block:4AAF7FBE"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_recordlostsatchelsfound10": {
+      "op": "number",
+      "flags": [
+        "block:4AAF7FBE"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_recordlostsatchelsfound50": {
+      "op": "number",
+      "flags": [
+        "block:4AAF7FBE"
+      ],
+      "threshold": 50,
+      "note": "Detected after the game saves or autosaves."
+    }
+  },
+  "blocks": {
+    "50FE632A": {
+      "type": "u32",
+      "max": 10
+    },
+    "47365FE8": {
+      "type": "bool",
+      "max": 1
+    },
+    "4736634E": {
+      "type": "bool",
+      "max": 1
+    },
+    "473666B4": {
+      "type": "bool",
+      "max": 1
+    },
+    "47366A1A": {
+      "type": "bool",
+      "max": 1
+    },
+    "47334812": {
+      "type": "bool",
+      "max": 1
+    },
+    "96774421": {
+      "type": "bool",
+      "max": 1
+    },
+    "3A50000C": {
+      "type": "bool",
+      "max": 1
+    },
+    "A5981A37": {
+      "type": "bool",
+      "max": 1
+    },
+    "6EF3C712": {
+      "type": "bool",
+      "max": 1
+    },
+    "424E9F0D": {
+      "type": "bool",
+      "max": 1
+    },
+    "2F91EFD3": {
+      "type": "bool",
+      "max": 1
+    },
+    "D985E1C2": {
+      "type": "bool",
+      "max": 1
+    },
+    "98ED661E": {
+      "type": "bool",
+      "max": 1
+    },
+    "FE837926": {
+      "type": "bool",
+      "max": 1
+    },
+    "0C16BEF4": {
+      "type": "bool",
+      "max": 1
+    },
+    "7611BFC3": {
+      "type": "bool",
+      "max": 1
+    },
+    "3EBEE1A7": {
+      "type": "u32",
+      "max": 28
+    },
+    "B79EF1FE": {
+      "type": "u32",
+      "max": 107
+    },
+    "75CE2CF6": {
+      "type": "u32",
+      "max": 39
+    },
+    "4AAF7FBE": {
+      "type": "u32",
+      "max": 100000
+    }
+  }
+}

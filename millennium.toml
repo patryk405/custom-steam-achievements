@@ -1,0 +1,20 @@
+[plugin]
+id = "local.custom-achievements"
+name = "Custom Achievements"
+version = "0.4.1"
+author = "Local"
+description = "Local achievement cards for non-Steam games. Automatic save tracking and native Steam notifications."
+[assets]
+resources = ["resources/catalog.json", "resources/botw-adapter.json", "resources/oot-adapter.json", "resources/bbport-adapter.json", "resources/arceus-adapter.json", "resources/odyssey-adapter.json", "resources/pokopia-adapter.json", "resources/achievement-sound.json"]
+[backend]
+entry = "backend/main.lua"
+sources = ["backend/**/*.lua"]
+[frontend]
+entry = "frontend/index.tsx"
+[compiler]
+output_path = "auto"
+[dev]
+auto_restart = false
+reload_steamui_when = "both"
+[patches]
+debug = true
