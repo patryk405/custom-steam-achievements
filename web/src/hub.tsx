@@ -22,6 +22,7 @@ function chooseGame(id:GameId){setGameId(id);setQuery('');const url=new URL(loca
 const gameCards=[...builtinPacks.map(p=>summary(p)),...cards].filter(c=>c.game===gameId);
 async function refresh(){try{const r=await fetch('/api/packs');if(!r.ok)throw Error();setCards(await r.json());setError('');}catch{setError('Community packs could not be loaded.');}}
 useEffect(()=>{refresh()},[]);
+useEffect(()=>{if(new URLSearchParams(location.search).get('guide')==='1'){setMode('guide');dialog.current?.showModal();}},[]);
 function open(m:typeof mode){setMode(m);setMessage('');dialog.current?.showModal();}
 async function details(c:Card){setSelected(null);setSelectedId(c.id);open('detail');try{const r=await fetch(`/api/packs/${c.id}`);if(!r.ok)throw Error();setSelected(await r.json());}catch{setMessage('This pack could not be loaded. Please try again.');}}
 async function file(f?:File){setDraft(null);setMessage('');if(!f)return;if(f.size>131072){setMessage('Choose a JSON file smaller than 128 KB.');return;}try{const p=packSchema.safeParse(JSON.parse(await f.text()));if(!p.success){setMessage(p.error.issues.slice(0,2).map(i=>i.message).join(' '));return;}setDraft(p.data);}catch{setMessage('This file is not valid JSON.');}}
