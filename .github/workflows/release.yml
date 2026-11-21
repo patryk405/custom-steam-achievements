@@ -2,7 +2,7 @@ name: Build installable packages
 on:
   push:
     branches: [main]
-    paths: ['packaging/**', 'tracker/**', 'frontend/**', 'backend/**', 'resources/**', 'millennium.toml', '.github/workflows/release.yml']
+    paths: ['packaging/**', 'tracker/**', 'frontend/**', 'backend/**', 'resources/**', 'tests/**', 'millennium.toml', '.github/workflows/release.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -43,6 +43,10 @@ jobs:
       - name: Adapter integration tests (Linux sockets)
         if: runner.os == 'Linux'
         run: python -m unittest discover -s tests -q
+      - name: Live Windows process and pipe integration tests
+        if: runner.os == 'Windows'
+        timeout-minutes: 3
+        run: python -m unittest discover -s tests -p test_windows_live.py -v
       - name: Parse Windows installer
         if: runner.os == 'Windows'
         shell: pwsh
@@ -75,5 +79,5 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release view v0.6.0 >/dev/null 2>&1 || gh release create v0.6.0 --target "$GITHUB_SHA" --title "0.6.0 — installable Windows and Linux preview" --notes-file packaging/README.txt
-          gh release upload v0.6.0 release-assets/* --clobber
+          gh release view v0.7.0 >/dev/null 2>&1 || gh release create v0.7.0 --prerelease --target "$GITHUB_SHA" --title "0.7.0 — Windows live tracking preview" --notes-file packaging/README.txt
+          gh release upload v0.7.0 release-assets/* --clobber

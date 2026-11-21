@@ -31,12 +31,8 @@ def nso_probes(path):
         raise ValueError('Invalid main text segment')
     text=raw[offset:offset+compressed]
     if flags&1:
-        lib=ctypes.CDLL('liblz4.so.1')
-        lib.LZ4_decompress_safe.argtypes=[ctypes.c_void_p,ctypes.c_void_p,ctypes.c_int,ctypes.c_int]
-        lib.LZ4_decompress_safe.restype=ctypes.c_int
-        output=ctypes.create_string_buffer(size)
-        if lib.LZ4_decompress_safe(text,output,len(text),size)!=size:raise ValueError('Invalid compressed main text')
-        text=output.raw
+        from lz4_block import decompress
+        text=decompress(text,size)
     if len(text)!=size or hashlib.sha256(text).digest()!=raw[0xa0:0xc0]:
         raise ValueError('Main text checksum mismatch')
     if struct.unpack_from('<I',text,0xb1030)[0]!=0xf2c0002d:

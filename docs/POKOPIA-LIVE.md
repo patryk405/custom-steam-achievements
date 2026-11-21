@@ -88,3 +88,29 @@ https://github.com/Dittobyte/Recompia/tree/4d7c1ff6f0e8cb7f23fb1f139495c55dc2130
 
 GPL-3.0-or-later source references; the read-only adaptation is included in
 `tracker/adapters/pokopia_live.py`. Existing PokoHex licence text is in licenses/.
+
+## Native Windows (0.7.0 preview)
+
+The Windows tracker does not need the Linux launch wrapper. In Setup, select
+Pokopia and **Live tracking**, choose the compiled `pkp.exe` and the exact
+`exefs/main` used by that installation, and save. Start Recompia normally.
+Only one instance of that configured executable may run.
+
+The reader resolves the process by full executable path, checks its owner SID
+and creation time, and opens it with query/read permissions only. It uses
+`VirtualQueryEx` and `ReadProcessMemory` inside the existing guest main/heap
+ranges. Guarded, unmapped and unreadable pages are rejected. Every sample still
+checks the NSO instruction probes and existing game-object/layout guards.
+A new process resets the sampling baseline. No elevation, debug privilege,
+injection, mod, game write, or save fallback is used.
+
+The address mapping is shared with Windows in the pinned Recompia source
+`runtime/include/nxrt/memory.h` (guest addresses equal host addresses).
+Compressed NSO text now uses a bounded raw-LZ4 decoder bundled with the tracker;
+Windows users do not need a separate liblz4 DLL.
+
+Windows CI allocates the documented address ranges in a disposable child
+process, changes synthetic dex data without writing any save, and exercises
+the real Win32 reader and existing sampler. This verifies the platform code,
+not actual Recompia gameplay: that final test remains pending. Builds other
+than the verified 2.0.1 NSO are refused.

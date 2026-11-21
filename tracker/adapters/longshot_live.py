@@ -4,6 +4,7 @@ import math
 import socket
 import struct
 import os
+from contextlib import contextmanager
 
 
 def number(value):
@@ -16,50 +17,51 @@ class LongshotReader:
         self.previous = None
         self.distance = 0.0
 
-    def read_metrics(self, path, watch=None):
-        try:
+    @contextmanager
+    def connect(self, path, expected_exe=None):
+        if os.name == 'nt':
+            from windows_native import NamedPipe
+            with NamedPipe(path, expected_exe) as pipe:
+                yield pipe, pipe, pipe.identity
+        else:
             with socket.socket(socket.AF_UNIX, socket.SOCK_STREAM) as sock:
-                sock.settimeout(1)
+                sock.settimeout(2)
                 sock.connect(str(path))
                 pid, uid, _ = struct.unpack('3i', sock.getsockopt(socket.SOL_SOCKET, socket.SO_PEERCRED, 12))
-                if uid != os.getuid():
-                    raise ValueError('Longshot socket belongs to another user')
+                if uid != os.getuid(): raise ValueError('Longshot socket belongs to another user')
+                with sock.makefile('rb') as stream:
+                    yield sock, stream, (pid, path.stat().st_ino)
+
+    def read_metrics(self, path, watch=None, expected_exe=None):
+        try:
+            with self.connect(path, expected_exe) as (sock, stream, identity):
                 watch = watch or {}
-                if len(watch) > 64:
-                    raise ValueError('Too many Longshot watched signals')
+                if len(watch) > 64: raise ValueError('Too many Longshot watched signals')
                 def request(command):
                     sock.sendall((json.dumps(command)+'\n').encode())
-                with sock.makefile('rb') as stream:
-                    def receive():
-                        raw = stream.readline(65537)
-                        if len(raw) > 65536 or not raw.endswith(b'\n'):
-                            raise ValueError('Invalid Longshot response size')
-                        result = json.loads(raw)
-                        if not isinstance(result, dict):
-                            raise ValueError('Invalid Longshot response')
-                        return result
-                    request({'id':1, 'cmd':'status'})
-                    reply = receive()
-                    # Validate runtime before accepting any game-specific signals.
-                    self.validate(reply)
-                    metrics = {}
-                    try:
-                        metrics = self.consume(reply, (pid, path.stat().st_ino))
-                    except ValueError:
-                        self.previous = None
-                        if not watch:
-                            raise
-                    if watch:
-                        request({'id':2, 'cmd':'subscribe', 'events':['oot'], 'every':60,
-                                 'flags':list(watch.values()), 'changes':False})
-                        ack = receive()
-                        if ack.get('id') != 2 or ack.get('ok') is not True:
-                            raise ValueError('Longshot flag subscription refused')
-                        event = receive()
-                        metrics.update(self.flag_metrics(event, watch))
-                    if not metrics:
-                        raise ValueError('Waiting for readable Longshot progress')
-                    return metrics
+                def receive():
+                    raw = stream.readline(65537)
+                    if len(raw) > 65536 or not raw.endswith(b'\n'): raise ValueError('Invalid Longshot response size')
+                    result = json.loads(raw)
+                    if not isinstance(result, dict): raise ValueError('Invalid Longshot response')
+                    return result
+                request({'id':1, 'cmd':'status'})
+                reply = receive()
+                self.validate(reply)
+                metrics = {}
+                try:
+                    metrics = self.consume(reply, identity)
+                except ValueError:
+                    self.previous = None
+                    if not watch: raise
+                if watch:
+                    request({'id':2, 'cmd':'subscribe', 'events':['oot'], 'every':60,
+                             'flags':list(watch.values()), 'changes':False})
+                    ack = receive()
+                    if ack.get('id') != 2 or ack.get('ok') is not True: raise ValueError('Longshot flag subscription refused')
+                    metrics.update(self.flag_metrics(receive(), watch))
+                if not metrics: raise ValueError('Waiting for readable Longshot progress')
+                return metrics
         except (FileNotFoundError, ConnectionRefusedError) as error:
             self.previous = None
             raise ValueError('Waiting for Longshot — launch the game through Steam') from error

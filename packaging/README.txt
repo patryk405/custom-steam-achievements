@@ -1,4 +1,4 @@
-CUSTOM STEAM ACHIEVEMENTS 0.6.0 — PREVIEW
+CUSTOM STEAM ACHIEVEMENTS 0.7.0 — PREVIEW
 
 1. Install Millennium from https://steambrew.app/ (desktop Steam).
 2. Close Steam. Extract this entire archive.
@@ -17,8 +17,8 @@ paplay, pw-play or aplay. Do not run the installer as root.
 Windows is experimental: bundled executable is smoke-tested on Windows,
 but Steam integration and game readers still need real gameplay testing.
 Save readers: BOTW, Arceus, Odyssey, Pokopia. Events: supported BBPort builds.
-Live Ocarina and Pokopia readers currently require Linux and a compatible
-configured game runtime. Installing the plugin alone does not add a game's
+Live Ocarina and Pokopia readers support native Windows and Linux with a
+compatible configured game runtime. Windows gameplay validation is pending. Installing the plugin alone does not add a game's
 control socket or live launch wrapper. See docs for version requirements.
 
 Data: Linux ~/.local/share/custom-achievements; Windows
@@ -34,3 +34,17 @@ Setup shortcut and .star plugin. Keep the data folder to preserve progress.
 
 Source, adapters and licenses:
 https://github.com/patryk405/custom-steam-achievements
+
+WINDOWS LIVE SETUP
+Open Custom Steam Achievements Setup and leave Live tracking enabled.
+Ocarina: select the game bin/longshot.exe (Longshot v3.0.0 source bd6a0cdd).
+Save settings. Setup creates Ocarina of Time - Achievements.lnk in the data
+folder. Use it to launch, or set the existing Steam shortcut Target to the
+installed csa-tracker.exe and Launch Options to --launch-longshot. Keep the
+shortcut's name/artwork. This enables HOS_CONTROL for that game process only.
+Pokopia: select the compiled pkp.exe and its actual exefs/main (2.0.1 build
+76a489f3bd3642fa5e18bd83d32c98ba). Save settings and start Recompia normally.
+Only one instance of the configured game may run. No admin rights or mods.
+The panel should say Live tracking. It will not silently fall back to saves.
+Test Ocarina with 5 metres of walking or one Rupee; Pokopia with a first dex
+entry or habitat. Existing achievements stay unlocked; no progress is reset.

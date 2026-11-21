@@ -39,3 +39,26 @@ Use `node scripts/mep-reload-hold.mjs plugin.restart '{"name":"local.custom-achi
 and keep that process running until Steam exits. Do not stop it as task cleanup.
 A live test on 2026-11-21 detected First Steps automatically; RPC recovery delivered
 the pending notification and host audio playback succeeded.
+
+## Windows (0.7.0 preview)
+
+The native Windows reader connects to Longshot's existing byte-mode named pipe;
+it sends the same `status` and `subscribe` requests as Linux. It checks the
+server PID, creation time, current-user SID and configured executable path,
+plus the existing protocol and game-version checks. Reads and writes have
+bounded deadlines. No raw-memory access is enabled.
+
+In Setup, select Ocarina, keep **Live tracking** enabled, choose the game's
+`bin/longshot.exe`, and save. Launch through the generated `.lnk`, or point the
+existing Steam shortcut at the installed `csa-tracker.exe` with launch options
+`--launch-longshot`. This helper sets `HOS_CONTROL=csa-longshot-v3` only for its
+child, preserves the game working directory and waits for the child to exit.
+Launching directly without that environment setting will not expose the pipe.
+
+Windows CI exercises real local named pipes, walking and flag responses,
+timeouts and version rejection with a disposable fake game. Actual Windows
+Longshot gameplay remains unverified. The supported version is still
+`v3.0.0 (source bd6a0cdd)`; newer versions are rejected rather than assumed safe.
+
+Transport source: [Longshot control bridge](https://git.magicbean.dev/MagicBeanDev/Longshot/src/branch/main/docs/dev/reference/control-bridge.md),
+`host/control.c` (Windows `PIPE_TYPE_BYTE`, local current-user DACL).

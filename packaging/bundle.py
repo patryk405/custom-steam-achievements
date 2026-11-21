@@ -16,7 +16,10 @@ shutil.copy2(out/'local.custom-achievements.star',stage)
 shutil.copy2(root/'packaging/README.txt',stage/'README.txt')
 for file in (['install-linux.sh'] if platform == 'linux' else ['Install.cmd','install-windows.ps1']): shutil.copy2(root/'packaging'/file,stage/file)
 shutil.copytree(root/'licenses',stage/'licenses')
-shutil.copytree(root/'scripts',stage/'advanced-scripts',ignore=shutil.ignore_patterns('__pycache__'))
+shutil.copytree(root/'docs',stage/'docs')
+# Ship matching source for advanced launch helpers and third-party license terms.
+for folder in ('tracker','scripts','resources'):
+    shutil.copytree(root/folder,stage/'source'/folder,ignore=shutil.ignore_patterns('__pycache__'))
 shutil.copytree(root/'resources',stage/'resources')
 archive = Path(shutil.make_archive(str(out/name),'zip',out,name))
 (out/(name+'.sha256')).write_text(hashlib.sha256(archive.read_bytes()).hexdigest()+'  '+archive.name+'\n')

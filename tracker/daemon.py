@@ -15,6 +15,7 @@ from adapters import botw, snapshot, bbport, pokopia, arceus, odyssey
 from adapters.botw_live import LiveReader
 from adapters.longshot_live import LongshotReader
 from adapters.pokopia_live import LiveReader as PokopiaLiveReader
+from adapters.pokopia_windows import LiveReader as WindowsPokopiaReader
 
 ROOT = resource_directory()
 DATA = data_directory()
@@ -52,6 +53,7 @@ class Host:
         self.live = LiveReader()
         self.longshot = LongshotReader()
         self.pokopia_live = PokopiaLiveReader()
+        self.pokopia_windows = WindowsPokopiaReader()
         self.seen = {}
         self.done = {}
         self.state = read_json(data/'state.json', {'schema': 1, 'games': {}, 'status': {}})
@@ -67,9 +69,9 @@ class Host:
                 if not enabled:
                     status['message'] = 'Automatic tracking paused'
                 else:
-                    if manifest.get('live') == 'recompia-memory-v1' and sys.platform == 'linux':
+                    if manifest.get('live') == 'recompia-memory-v1':
                         try:
-                            metrics = self.pokopia_live.read_metrics(expand_root(manifest['socket']))
+                            metrics = (self.pokopia_windows.read_metrics(manifest) if os.name == 'nt' else self.pokopia_live.read_metrics(expand_root(manifest['socket'])))
                         except (OSError, ValueError, TypeError, KeyError) as error:
                             if manifest.get('liveOnly', True):
                                 status.update(message='Waiting for Pokopia live tracking — '+str(error), mode='live-waiting')
@@ -98,8 +100,8 @@ class Host:
                         self.state['status'][game] = status
                         continue
                     if manifest['kind'] == 'longshot-live':
-                        if sys.platform != 'linux': raise ValueError('Longshot live tracking currently requires Linux')
-                        metrics = self.longshot.read_metrics(expand_root(manifest['socket']), manifest.get('watch'))
+                        endpoint = manifest.get('windowsPipe', 'csa-longshot-v3') if os.name == 'nt' else expand_root(manifest['socket'])
+                        metrics = self.longshot.read_metrics(endpoint, manifest.get('watch'), manifest.get('windowsExe') if os.name == 'nt' else None)
                         definitions = {a['id']: a for a in self.catalog[game]['achievements']}
                         self.state['games'][game] = apply_rules(self.state['games'].get(game, {}), manifest, metrics, definitions)
                         status.update(message='Live tracking — no save required', mode='live', metricsRead=len(metrics), lastReadAt=int(time.time()))
@@ -153,9 +155,13 @@ class Host:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--once', action='store_true')
+    parser.add_argument('--launch-longshot', action='store_true', help='Launch configured Longshot with its local control bridge')
     parser.add_argument('--configure', action='store_true', help='Open game setup')
     parser.add_argument('--self-test', action='store_true', help='Validate bundled resources without accessing user data')
     args = parser.parse_args()
+    if args.launch_longshot:
+        from windows_setup import launch_longshot
+        return launch_longshot(DATA)
     if args.self_test:
         catalog = json.loads((ROOT/'resources/catalog.json').read_text())
         for path in (ROOT/'resources').glob('*-adapter.json'):
