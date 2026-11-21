@@ -1,13 +1,22 @@
 # Custom Steam Achievements
 
+## Download
+
+Ready-to-install [Windows x64](https://github.com/patryk405/custom-steam-achievements/releases/download/v0.6.0/custom-steam-achievements-windows-x64.zip) and [Linux x64](https://github.com/patryk405/custom-steam-achievements/releases/download/v0.6.0/custom-steam-achievements-linux-x64.zip) packages include the plugin, standalone tracker and a native game setup window. No Python or Bun installation is needed. Install [Millennium](https://steambrew.app/) first, close Steam, extract the ZIP, and run `Install.cmd` (Windows) or `bash install-linux.sh` (Linux).
+
+See [package instructions and compatibility](packaging/README.txt). Windows is experimental; live Ocarina/Pokopia adapters currently require Linux. Open each supported game's library page once to connect notifications. Updates preserve progress. [Plugin only](https://github.com/patryk405/custom-steam-achievements/releases/download/v0.6.0/local.custom-achievements.star) requires a separately running tracker.
+
+Builds run on Windows and Ubuntu 22.04; the executable resource/lock smoke tests must pass before release publication. This does not replace gameplay testing on each supported runtime.
+
+
 [Website](https://patryk405.github.io/custom-steam-achievements/) · [Pack library](https://patryk405.github.io/custom-steam-achievements/?view=library) · [Steam account](https://patryk405.github.io/custom-steam-achievements/?view=account)
 
-This is a developer preview, not a one-click installer. Linux desktop Steam and Millennium are required. Big Picture, Decky, and Windows are not supported by this preview.
+The packages above are the easiest installation path. The instructions below are for building from source. Big Picture and Decky are not included.
 
-## Setup
+## Build from source
 1. Install Millennium using https://steambrew.app/ and confirm it works in desktop Steam.
 2. Extract this archive. Install Bun and Python 3 if needed.
-3. Add your game to Steam as a non-Steam shortcut. Set its numeric shortcut ID in `resources/shortcut-ids.json`: all IDs are intentionally 0 in this source distribution. They must match your own installation for notifications.
+3. Add your game to Steam as a non-Steam shortcut. Set its numeric shortcut ID in `resources/shortcut-ids.json`: all IDs are intentionally 0 in this source distribution. Alternatively, open the supported game’s library page once; the plugin saves its shortcut ID at runtime.
 4. Check `resources/botw-adapter.json` and `docs/ADAPTERS.md` for the supported save locations and adapter setup. Live tracking is version-pinned to Savage Wind 0.6.0-alpha.6 / BOTW 1.9.0; start your game launcher with SAVAGEWIND_CONTROL=27777 in its environment.
 5. From the extracted directory, run `bun install`, then `bun run build`. The Millennium Starlight build uses the local Millennium plugin output location (`output_path = "auto"`). Fully exit and reopen Steam and enable Custom Achievements in Millennium.
 6. Start the separate tracker in a terminal with `python tracker/daemon.py`. Keep it running while playing. Stop it with Ctrl+C. This archive does not install a background service.
@@ -19,7 +28,7 @@ This is a developer preview, not a one-click installer. Linux desktop Steam and 
 - Bloodborne: full 40-trophy BBPort event pack. Arceus: 38 save-based objectives. Odyssey: 35 save-based objectives. Pokopia: 11 objectives with experimental Recompia 2.0.1 live memory tracking, no mod required. See docs/POKOPIA-LIVE.md. First Friend and First Habitat were verified in gameplay. Configure with scripts/configure-game.py; see docs/NEW-GAMES.md. These four adapters have fixture tests but await real-game verification. Third-party source/license notices are included under docs/THIRD-PARTY.md and licenses/.
 - This distribution replaces machine-specific shortcut IDs with 0 and uses an original neutral chime instead of the local Steam audio sample.
 - Game files, ROMs, keys, save data, user progress, screenshots, credentials and node_modules are not included.
-- Steam's private interface can change. This sanitized source archive has not been validated end-to-end on a clean machine. It is intended for developers and manual setup.
+- Steam's private interface can change. Packages pass automated build and resource checks, but clean-machine Steam integration remains experimental.
 - Optional Steam-account cloud synchronization is available in plugin settings; see docs/CLOUD-SYNC.md. It requires a reachable public deployment and one-time pairing per device. This does not create official Steam profile achievements.
 - Downloadable website pack envelopes do not yet have a one-click plugin importer.
 

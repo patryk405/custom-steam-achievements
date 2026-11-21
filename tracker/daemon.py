@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Local adapter host. Polls stable files, updates a private atomic progress file."""
 import argparse
-import fcntl
+import sys
+from platform_support import data_directory, resource_directory, acquire_lock
 import json
 import os
 from pathlib import Path
@@ -15,8 +16,8 @@ from adapters.botw_live import LiveReader
 from adapters.longshot_live import LongshotReader
 from adapters.pokopia_live import LiveReader as PokopiaLiveReader
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA = Path(os.environ.get('XDG_DATA_HOME', str(Path.home()/'.local/share')))/'custom-achievements'
+ROOT = resource_directory()
+DATA = data_directory()
 
 def read_json(path, default):
     try:
@@ -66,7 +67,7 @@ class Host:
                 if not enabled:
                     status['message'] = 'Automatic tracking paused'
                 else:
-                    if manifest.get('live') == 'recompia-memory-v1':
+                    if manifest.get('live') == 'recompia-memory-v1' and sys.platform == 'linux':
                         try:
                             metrics = self.pokopia_live.read_metrics(expand_root(manifest['socket']))
                         except (OSError, ValueError, TypeError, KeyError) as error:
@@ -97,6 +98,7 @@ class Host:
                         self.state['status'][game] = status
                         continue
                     if manifest['kind'] == 'longshot-live':
+                        if sys.platform != 'linux': raise ValueError('Longshot live tracking currently requires Linux')
                         metrics = self.longshot.read_metrics(expand_root(manifest['socket']), manifest.get('watch'))
                         definitions = {a['id']: a for a in self.catalog[game]['achievements']}
                         self.state['games'][game] = apply_rules(self.state['games'].get(game, {}), manifest, metrics, definitions)
@@ -151,11 +153,29 @@ class Host:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--once', action='store_true')
+    parser.add_argument('--configure', action='store_true', help='Open game setup')
+    parser.add_argument('--self-test', action='store_true', help='Validate bundled resources without accessing user data')
     args = parser.parse_args()
+    if args.self_test:
+        catalog = json.loads((ROOT/'resources/catalog.json').read_text())
+        for path in (ROOT/'resources').glob('*-adapter.json'):
+            manifest = json.loads(path.read_text())
+            assert manifest['game'] in catalog
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            with (Path(tmp)/'lock').open('a+b') as lock: acquire_lock(lock)
+        print('Resources, adapters and platform lock OK')
+        return
+    if args.configure:
+        from setup_ui import configure
+        configure(ROOT, DATA)
+        return
     DATA.mkdir(parents=True, exist_ok=True)
     os.umask(0o077)
-    with (DATA/'tracker.lock').open('w') as lock:
-        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    with (DATA/'tracker.lock').open('a+b') as lock:
+        try: acquire_lock(lock)
+        except OSError:
+            print('Tracker is already running.'); return
         manifests = [json.loads((ROOT/'resources'/name).read_text()) for name in ('botw-adapter.json', 'oot-adapter.json', 'bbport-adapter.json', 'arceus-adapter.json', 'odyssey-adapter.json', 'pokopia-adapter.json')]
         custom = DATA/'adapters'
         if custom.is_dir():
@@ -166,6 +186,10 @@ def main():
         cloud = Cloud(DATA,host.catalog)
         threading.Thread(target=cloud.run,daemon=True).start()
         while True:
+            # Reload user adapter overrides without requiring a service restart.
+            if custom.is_dir():
+                overrides = [read_json(p,{}) for p in sorted(custom.glob('*.json'))]
+                host.manifests = list({m['id']:m for m in [*manifests,*overrides] if m.get('id')}.values())
             if cloud.prepare(host):
                 host.tick()
                 cloud.finish(host)

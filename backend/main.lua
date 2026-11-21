@@ -3,7 +3,12 @@ local json = require('json')
 local logger = require('logger')
 local fs = require('fs')
 local utils = require('utils')
-local data_dir = (os.getenv('XDG_DATA_HOME') or (os.getenv('HOME') .. '/.local/share')) .. '/custom-achievements'
+local windows = package.config:sub(1,1) == '\\'
+local data_dir = (windows and assert(os.getenv('LOCALAPPDATA'), 'LOCALAPPDATA is required') or (os.getenv('XDG_DATA_HOME') or (os.getenv('HOME') .. '/.local/share'))) .. '/custom-achievements'
+local function replace_file(source, destination)
+    if windows then os.remove(destination) end
+    return os.rename(source, destination)
+end
 local function read_json_file(path)
     local file = io.open(path, 'rb')
     if not file then return {} end
@@ -85,7 +90,7 @@ function set_active_steam_account(steam_id)
     fs.create_directories(data_dir)
     local path = data_dir .. '/steam-account.json'
     local file = assert(io.open(path .. '.tmp','wb'))
-    file:write(json.encode({steamId=steam_id,at=os.time()}));file:close();assert(os.rename(path .. '.tmp',path))
+    file:write(json.encode({steamId=steam_id,at=os.time()}));file:close();assert(replace_file(path .. '.tmp',path))
     return true
 end
 ---@ffi
@@ -97,7 +102,7 @@ function cloud_action(action)
     if not account then error('Waiting for Steam account') end
     local path = data_dir .. '/cloud-command.json'
     local file = assert(io.open(path .. '.tmp','wb'))
-    file:write(json.encode({action=action,steamId=account}));file:close();assert(os.rename(path .. '.tmp',path))
+    file:write(json.encode({action=action,steamId=account}));file:close();assert(replace_file(path .. '.tmp',path))
     return true
 end
 
@@ -110,6 +115,7 @@ function get_settings()
     value.updatedAt = automatic.updatedAt
     value.cloud = read_json_file(data_dir .. '/cloud-status.json')
     value.steamId = automatic.steamId
+    value.shortcutIds = read_json_file(data_dir .. '/shortcut-ids.json')
     return json.encode(value)
 end
 ---@ffi
@@ -123,7 +129,7 @@ function set_preferences(icon_mode, auto_enabled)
     local file = assert(io.open(path .. '.tmp', 'wb'))
     assert(file:write(json.encode({iconMode = 'original', autoEnabled = auto_enabled})))
     assert(file:close())
-    assert(os.rename(path .. '.tmp', path))
+    assert(replace_file(path .. '.tmp', path))
     return get_settings()
 end
 ---@ffi
@@ -174,9 +180,27 @@ function play_achievement_sound()
     local request = queue .. '/' .. tostring(os.time()) .. '-' .. tostring(math.random(100000, 999999)) .. '.json'
     local pending = assert(io.open(request .. '.tmp', 'wb'))
     assert(pending:write('{}')); assert(pending:close())
-    assert(os.rename(request .. '.tmp', request))
+    assert(replace_file(request .. '.tmp', request))
     return true
 end
+---@ffi
+---@param game string
+---@param app_id number
+---@return boolean
+function register_shortcut(game, app_id)
+    check_game(game)
+    if type(app_id) ~= 'number' or app_id <= 0 or app_id > 4294967295 or app_id % 1 ~= 0 then error('Invalid shortcut ID') end
+    fs.create_directories(data_dir)
+    local path = data_dir .. '/shortcut-ids.json'
+    local ids = read_json_file(path)
+    if ids[game] == app_id then return true end
+    ids[game] = app_id
+    local file = assert(io.open(path .. '.tmp', 'wb'))
+    file:write(json.encode(ids)); file:close()
+    assert(replace_file(path .. '.tmp', path))
+    return true
+end
+
 return {
     on_load = function() logger:info('Custom Achievements prototype loaded'); millennium.ready() end,
     patches = {

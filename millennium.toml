@@ -1,7 +1,7 @@
 [plugin]
 id = "local.custom-achievements"
 name = "Custom Achievements"
-version = "0.5.0"
+version = "0.6.0"
 author = "Local"
 description = "Local achievement cards for non-Steam games. Automatic save tracking and native Steam notifications."
 [assets]
@@ -17,4 +17,4 @@ output_path = "auto"
 auto_restart = false
 reload_steamui_when = "both"
 [patches]
-debug = true
+debug = false

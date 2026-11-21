@@ -8,12 +8,13 @@ const store={
 };
 mock.module('millennium',()=>({findModuleExport:()=>store}));
 const audioCalls:string[]=[];
-(globalThis as any).backend={play_achievement_sound:async()=>{audioCalls.push('played');return true;}};
+(globalThis as any).backend={get_settings:async()=>JSON.stringify({shortcutIds:{botw:1234567890}}),play_achievement_sound:async()=>{audioCalls.push('played');return true;}};
 const {notifyAchievement,testNotification}=await import('./notifications');
 test('preview goes to desktop even in game and omits persistent-until-resolved callback',async()=>{
  await testNotification('botw');
  expect(desktop.at(-1)).toHaveLength(3);
  expect(desktop.at(-1)![2].name).toBe('Test notification');
+ expect(desktop.at(-1)![2].appid).toBe(1234567890);
  expect(overlay).toHaveLength(0);
 });
 test('real unlock uses the working desktop route even with an overlay registered',async()=>{

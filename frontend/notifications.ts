@@ -5,12 +5,21 @@ import {artwork, paths} from './icons';
 
 // Local shortcut IDs; no Steamworks stats or account achievements are modified.
 const shortcutIds:Record<Game,number>=configuredShortcutIds;
+async function refreshShortcutIds(){
+  const raw=await backend.get_settings();
+  const settings=typeof raw==='string'?JSON.parse(raw):raw;
+  for(const game of Object.keys(catalog) as Game[]){
+    const id=settings.shortcutIds?.[game];
+    if(Number.isInteger(id)&&id>0&&id<=0xffffffff)shortcutIds[game]=id;
+  }
+}
 function iconUrl(kind:string){
   const art=artwork[kind]||{motif:kind,color:'#79c8de',tier:''};
   const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><rect width="48" height="48" fill="#243443"/><g transform="translate(8 8)" fill="none" stroke="${art.color}" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="${paths[art.motif]||paths.star}"/></g>${art.tier?`<rect x="32" y="30" width="16" height="18" fill="#17232d"/><text x="40" y="43" text-anchor="middle" fill="${art.color}" font-family="Arial" font-size="12">${art.tier}</text>`:''}</svg>`;
   return 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
 }
 export async function notifyAchievement(game:Game,id:string,preview=false){
+  await refreshShortcutIds();
   if(!shortcutIds[game])throw new Error('Configure the Steam shortcut ID first');
   const achievement=catalog[game].achievements.find(a=>a.id===id);
   if(!achievement)throw new Error('Unknown achievement');
@@ -62,6 +71,7 @@ export function startNotifications(){
   async function poll(){
     if(busy||stopped)return;busy=true;
     try{
+      await refreshShortcutIds();
       const raw=await backend.get_pending_notifications();
       const pending=typeof raw==='string'?JSON.parse(raw):raw;
       if(stopped||!Array.isArray(pending)||!pending.length)return;

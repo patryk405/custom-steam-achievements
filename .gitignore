@@ -11,3 +11,7 @@ dist/
 *.tsbuildinfo
 backups/
 *.sqlite*
+.millennium/lsp/
+.luarc.json
+build/
+*.spec

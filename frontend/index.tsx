@@ -113,6 +113,7 @@ function Panel({game}:{game:Game}) {
 /** @ffi */
 export function AchievementPanel({overview}: {details?:any;overview?:any}): JSX.Element | null {
   const game=resolveGame(overview?.display_name);
+  useEffect(()=>{if(game&&Number.isInteger(overview?.appid))void backend.register_shortcut(game,overview.appid).catch(console.warn);},[game,overview?.appid]);
   return game?<Panel key={game} game={game}/>:null;
 }
 function CloudSettings(){
