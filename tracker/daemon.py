@@ -164,7 +164,9 @@ def main():
         import tempfile
         with tempfile.TemporaryDirectory() as tmp:
             with (Path(tmp)/'lock').open('a+b') as lock: acquire_lock(lock)
-        print('Resources, adapters and platform lock OK')
+        import tkinter
+        tkinter.Tcl().eval('info patchlevel')
+        print('Resources, adapters, GUI runtime and platform lock OK')
         return
     if args.configure:
         from setup_ui import configure

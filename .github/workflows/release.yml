@@ -43,6 +43,13 @@ jobs:
       - name: Adapter integration tests (Linux sockets)
         if: runner.os == 'Linux'
         run: python -m unittest discover -s tests -q
+      - name: Parse Windows installer
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $tokens = $null; $errors = $null
+          [System.Management.Automation.Language.Parser]::ParseFile((Join-Path $PWD 'packaging/install-windows.ps1'), [ref]$tokens, [ref]$errors) | Out-Null
+          if ($errors.Count) { throw ($errors | Out-String) }
       - name: Portable packaging tests
         run: python -m unittest discover -s tests -p test_packaging.py -v
       - run: python packaging/bundle.py ${{ matrix.platform }}

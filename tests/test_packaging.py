@@ -19,7 +19,7 @@ class PackagingTests(unittest.TestCase):
             state=data/'state.json'; state.write_text('{"existing":"progress"}')
             save_configuration(ROOT,data,'pokopia',str(save))
             manifest=json.loads((data/'adapters/pokopia-adapter.json').read_text())
-            self.assertEqual(manifest['root'],str(save.parent))
+            self.assertEqual(manifest['root'],str(save.parent.resolve()))
             self.assertFalse(manifest['liveOnly'])
             self.assertEqual(save.read_bytes(),b'unchanged game data')
             self.assertEqual(state.read_text(),'{"existing":"progress"}')
