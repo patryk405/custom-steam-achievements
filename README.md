@@ -46,4 +46,6 @@ Apply `supabase/schema.sql` to a new Supabase database. Deploy the `achievements
 Browser sessions use sessionStorage and a verifier-bound one-time login exchange. Steam authenticates the user on its own site and returns to GitHub Pages. Sign out revokes the browser token; device access is managed separately in the account panel.
 
 ## Distribution
+Version 0.5.0 uses the Supabase backend; older 0.4.x clients need updating to keep cloud sync working.
+
 The source preview includes an original notification chime. Game files, keys, saves and credentials are not distributed. Third-party notices are in `docs/THIRD-PARTY.md`, `licenses/`, and `website/lib/covers/sources.json`. No blanket license is assigned to third-party game artwork.
