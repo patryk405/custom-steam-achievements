@@ -13,3 +13,5 @@ The tracker must run on each device. Linux and Steam Deck desktop mode use the s
 The cloud endpoint must be reachable by devices without a ChatGPT access gate. Private Sites previews block device API calls; do not distribute a Sites bypass token. Public hosting does not make progress public: session checks protect account progress and device management. Online synchronization is unavailable until public access is enabled and each device is paired.
 
 Local reset currently does not reset cloud progress: monotonic synchronization restores existing unlocks. Disconnect cloud before local-only reset tests. To remove a device's future access, revoke it on the website; disconnecting in the plugin removes only the local credential.
+
+The production UI is hosted on GitHub Pages; the API and database are hosted on Supabase. Browser login uses a single-use Steam OpenID exchange bound to a SHA-256 verifier stored only in the initiating browser session. Browser sessions are kept in sessionStorage, not URL parameters. Device tokens are unchanged by the backend migration.

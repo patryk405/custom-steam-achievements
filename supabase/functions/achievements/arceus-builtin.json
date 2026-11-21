@@ -1,0 +1,584 @@
+{
+  "schema": 1,
+  "id": "arceus-collection",
+  "title": "The Hisui Survey",
+  "game": "arceus",
+  "version": "0.3.0",
+  "author": "Custom Steam Achievements",
+  "description": "38 objectives for ranks, nobles, rides, wisps and more. Reads the selected save or autosave; no live memory tracking. Real-game verification pending.",
+  "source": "https://github.com/fabioschmidt01/PokeL-ARecomp",
+  "achievements": [
+    {
+      "id": "arceus_expeditionteamrank1",
+      "name": "1-Star Surveyor",
+      "description": "Reach Galaxy Team rank 1.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_expeditionteamrank2",
+      "name": "2-Star Surveyor",
+      "description": "Reach Galaxy Team rank 2.",
+      "target": 2,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_expeditionteamrank3",
+      "name": "3-Star Surveyor",
+      "description": "Reach Galaxy Team rank 3.",
+      "target": 3,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_expeditionteamrank4",
+      "name": "4-Star Surveyor",
+      "description": "Reach Galaxy Team rank 4.",
+      "target": 4,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_expeditionteamrank5",
+      "name": "5-Star Surveyor",
+      "description": "Reach Galaxy Team rank 5.",
+      "target": 5,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_expeditionteamrank6",
+      "name": "6-Star Surveyor",
+      "description": "Reach Galaxy Team rank 6.",
+      "target": 6,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_expeditionteamrank7",
+      "name": "7-Star Surveyor",
+      "description": "Reach Galaxy Team rank 7.",
+      "target": 7,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_expeditionteamrank8",
+      "name": "8-Star Surveyor",
+      "description": "Reach Galaxy Team rank 8.",
+      "target": 8,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_expeditionteamrank9",
+      "name": "9-Star Surveyor",
+      "description": "Reach Galaxy Team rank 9.",
+      "target": 9,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_expeditionteamrank10",
+      "name": "10-Star Surveyor",
+      "description": "Reach Galaxy Team rank 10.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_canridewyrdeer",
+      "name": "Wyrdeer Rider",
+      "description": "Unlock Wyrdeer as a ride Pokémon.",
+      "target": 1,
+      "icon": "horse"
+    },
+    {
+      "id": "arceus_canrideursaluna",
+      "name": "Ursaluna Rider",
+      "description": "Unlock Ursaluna as a ride Pokémon.",
+      "target": 1,
+      "icon": "horse"
+    },
+    {
+      "id": "arceus_canridebasculegion",
+      "name": "Basculegion Rider",
+      "description": "Unlock Basculegion as a ride Pokémon.",
+      "target": 1,
+      "icon": "horse"
+    },
+    {
+      "id": "arceus_canridesneasler",
+      "name": "Sneasler Rider",
+      "description": "Unlock Sneasler as a ride Pokémon.",
+      "target": 1,
+      "icon": "horse"
+    },
+    {
+      "id": "arceus_canridebraviary",
+      "name": "Braviary Rider",
+      "description": "Unlock Braviary as a ride Pokémon.",
+      "target": 1,
+      "icon": "horse"
+    },
+    {
+      "id": "arceus_defeatedlordkleavor",
+      "name": "Kleavor Calmed",
+      "description": "Defeat Kleavor.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "arceus_defeatedladylilligant",
+      "name": "Lilligant Calmed",
+      "description": "Defeat Lilligant.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "arceus_defeatedlordarcanine",
+      "name": "Arcanine Calmed",
+      "description": "Defeat Arcanine.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "arceus_defeatedlordelectrode",
+      "name": "Electrode Calmed",
+      "description": "Defeat Electrode.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "arceus_defeatedlordavalugg",
+      "name": "Avalugg Calmed",
+      "description": "Defeat Avalugg.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "arceus_defeatedarceus",
+      "name": "The Original One",
+      "description": "Defeat Arceus.",
+      "target": 1,
+      "icon": "sword"
+    },
+    {
+      "id": "arceus_completedpokedex",
+      "name": "The Hisui Survey",
+      "description": "Complete the Pokédex milestone that unlocks the Azure Flute encounter.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_perfectedpokedex",
+      "name": "Perfect Research",
+      "description": "Achieve the game’s complete Pokédex research milestone.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_unlockedlostandfound",
+      "name": "Lost and Found",
+      "description": "Unlock Lost and Found.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_unlockedmassrelease",
+      "name": "Pasture Manager",
+      "description": "Unlock mass release.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_unlockeddistortions",
+      "name": "Space-Time Explorer",
+      "description": "Unlock space-time distortions.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_totalunowncaptured1",
+      "name": "Unown Notes",
+      "description": "Capture 1 Unown forms.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_totalunowncaptured28",
+      "name": "The Whole Alphabet",
+      "description": "Capture 28 Unown forms.",
+      "target": 28,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_wispsfoundtotal1",
+      "name": "1 Wisps",
+      "description": "Collect 1 wisps.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_wispsfoundtotal30",
+      "name": "30 Wisps",
+      "description": "Collect 30 wisps.",
+      "target": 30,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_wispsfoundtotal60",
+      "name": "60 Wisps",
+      "description": "Collect 60 wisps.",
+      "target": 60,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_wispsfoundtotal107",
+      "name": "107 Wisps",
+      "description": "Collect 107 wisps.",
+      "target": 107,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_satchelupgrades1",
+      "name": "Room for 1 More",
+      "description": "Buy 1 satchel upgrades.",
+      "target": 1,
+      "icon": "backpack"
+    },
+    {
+      "id": "arceus_satchelupgrades10",
+      "name": "Room for 10 More",
+      "description": "Buy 10 satchel upgrades.",
+      "target": 10,
+      "icon": "backpack"
+    },
+    {
+      "id": "arceus_satchelupgrades39",
+      "name": "Room for 39 More",
+      "description": "Buy 39 satchel upgrades.",
+      "target": 39,
+      "icon": "backpack"
+    },
+    {
+      "id": "arceus_recordlostsatchelsfound1",
+      "name": "Recovery Team 1",
+      "description": "Recover 1 lost satchels.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_recordlostsatchelsfound10",
+      "name": "Recovery Team 10",
+      "description": "Recover 10 lost satchels.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "arceus_recordlostsatchelsfound50",
+      "name": "Recovery Team 50",
+      "description": "Recover 50 lost satchels.",
+      "target": 50,
+      "icon": "star"
+    }
+  ],
+  "rules": {
+    "arceus_expeditionteamrank1": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank2": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 2,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank3": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 3,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank4": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 4,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank5": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 5,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank6": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 6,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank7": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 7,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank8": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 8,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank9": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 9,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_expeditionteamrank10": {
+      "op": "number",
+      "flags": [
+        "block:50FE632A"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_canridewyrdeer": {
+      "op": "any",
+      "flags": [
+        "block:47365FE8"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_canrideursaluna": {
+      "op": "any",
+      "flags": [
+        "block:4736634E"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_canridebasculegion": {
+      "op": "any",
+      "flags": [
+        "block:473666B4"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_canridesneasler": {
+      "op": "any",
+      "flags": [
+        "block:47366A1A"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_canridebraviary": {
+      "op": "any",
+      "flags": [
+        "block:47334812"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_defeatedlordkleavor": {
+      "op": "any",
+      "flags": [
+        "block:96774421"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_defeatedladylilligant": {
+      "op": "any",
+      "flags": [
+        "block:3A50000C"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_defeatedlordarcanine": {
+      "op": "any",
+      "flags": [
+        "block:A5981A37"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_defeatedlordelectrode": {
+      "op": "any",
+      "flags": [
+        "block:6EF3C712"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_defeatedlordavalugg": {
+      "op": "any",
+      "flags": [
+        "block:424E9F0D"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_defeatedarceus": {
+      "op": "any",
+      "flags": [
+        "block:2F91EFD3"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_completedpokedex": {
+      "op": "any",
+      "flags": [
+        "block:D985E1C2"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_perfectedpokedex": {
+      "op": "any",
+      "flags": [
+        "block:98ED661E"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_unlockedlostandfound": {
+      "op": "any",
+      "flags": [
+        "block:FE837926"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_unlockedmassrelease": {
+      "op": "any",
+      "flags": [
+        "block:0C16BEF4"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_unlockeddistortions": {
+      "op": "any",
+      "flags": [
+        "block:7611BFC3"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_totalunowncaptured1": {
+      "op": "number",
+      "flags": [
+        "block:3EBEE1A7"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_totalunowncaptured28": {
+      "op": "number",
+      "flags": [
+        "block:3EBEE1A7"
+      ],
+      "threshold": 28,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_wispsfoundtotal1": {
+      "op": "number",
+      "flags": [
+        "block:B79EF1FE"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_wispsfoundtotal30": {
+      "op": "number",
+      "flags": [
+        "block:B79EF1FE"
+      ],
+      "threshold": 30,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_wispsfoundtotal60": {
+      "op": "number",
+      "flags": [
+        "block:B79EF1FE"
+      ],
+      "threshold": 60,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_wispsfoundtotal107": {
+      "op": "number",
+      "flags": [
+        "block:B79EF1FE"
+      ],
+      "threshold": 107,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_satchelupgrades1": {
+      "op": "number",
+      "flags": [
+        "block:75CE2CF6"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_satchelupgrades10": {
+      "op": "number",
+      "flags": [
+        "block:75CE2CF6"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_satchelupgrades39": {
+      "op": "number",
+      "flags": [
+        "block:75CE2CF6"
+      ],
+      "threshold": 39,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_recordlostsatchelsfound1": {
+      "op": "number",
+      "flags": [
+        "block:4AAF7FBE"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_recordlostsatchelsfound10": {
+      "op": "number",
+      "flags": [
+        "block:4AAF7FBE"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "arceus_recordlostsatchelsfound50": {
+      "op": "number",
+      "flags": [
+        "block:4AAF7FBE"
+      ],
+      "threshold": 50,
+      "note": "Detected after the game saves or autosaves."
+    }
+  }
+}

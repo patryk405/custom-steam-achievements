@@ -1,0 +1,3 @@
+import React from 'react';import {createRoot} from 'react-dom/client';import {AuthProvider,useAuth} from './auth';import SiteHeader from './site-header';import Hub from './hub';import Account from './account';import home from './home.html?raw';import './style.css';
+function App(){const {data,ready}=useAuth();const view=new URLSearchParams(location.search).get('view');if(!ready)return <><SiteHeader active="home"/><main className="home-main"><p>Loading…</p></main></>;if(view==='account')return <Account/>;if(view==='library')return <Hub signedIn={!!data?.signedIn}/>;return <><SiteHeader active="home"/><div dangerouslySetInnerHTML={{__html:home}}/></>;}
+createRoot(document.getElementById('root')!).render(<AuthProvider><App/></AuthProvider>);

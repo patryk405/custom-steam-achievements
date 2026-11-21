@@ -1,0 +1,539 @@
+{
+  "schema": 1,
+  "id": "odyssey-collection",
+  "title": "A World of Moons",
+  "game": "odyssey",
+  "version": "0.3.0",
+  "author": "Custom Steam Achievements",
+  "description": "35 kingdom and Power Moon milestones. Reads the selected save or autosave. Real-game verification pending.",
+  "source": "https://github.com/Simon3Sarkis/super-odyssey-pc-recomp",
+  "achievements": [
+    {
+      "id": "odyssey_kingdom_0",
+      "name": "Cap Bound",
+      "description": "Unlock the Cap Kingdom.",
+      "target": 1,
+      "icon": "mountain"
+    },
+    {
+      "id": "odyssey_moons_0",
+      "name": "Cap Collector",
+      "description": "Record 10 Power Moons in the Cap Kingdom.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_kingdom_1",
+      "name": "Cascade Bound",
+      "description": "Unlock the Cascade Kingdom.",
+      "target": 1,
+      "icon": "mountain"
+    },
+    {
+      "id": "odyssey_moons_1",
+      "name": "Cascade Collector",
+      "description": "Record 10 Power Moons in the Cascade Kingdom.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_kingdom_2",
+      "name": "Sand Bound",
+      "description": "Unlock the Sand Kingdom.",
+      "target": 1,
+      "icon": "mountain"
+    },
+    {
+      "id": "odyssey_moons_2",
+      "name": "Sand Collector",
+      "description": "Record 10 Power Moons in the Sand Kingdom.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_kingdom_3",
+      "name": "Lake Bound",
+      "description": "Unlock the Lake Kingdom.",
+      "target": 1,
+      "icon": "mountain"
+    },
+    {
+      "id": "odyssey_moons_3",
+      "name": "Lake Collector",
+      "description": "Record 10 Power Moons in the Lake Kingdom.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_kingdom_4",
+      "name": "Wooded Bound",
+      "description": "Unlock the Wooded Kingdom.",
+      "target": 1,
+      "icon": "mountain"
+    },
+    {
+      "id": "odyssey_moons_4",
+      "name": "Wooded Collector",
+      "description": "Record 10 Power Moons in the Wooded Kingdom.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_kingdom_5",
+      "name": "Cloud Bound",
+      "description": "Unlock the Cloud Kingdom.",
+      "target": 1,
+      "icon": "mountain"
+    },
+    {
+      "id": "odyssey_kingdom_6",
+      "name": "Lost Bound",
+      "description": "Unlock the Lost Kingdom.",
+      "target": 1,
+      "icon": "mountain"
+    },
+    {
+      "id": "odyssey_moons_6",
+      "name": "Lost Collector",
+      "description": "Record 10 Power Moons in the Lost Kingdom.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_kingdom_7",
+      "name": "Metro Bound",
+      "description": "Unlock the Metro Kingdom.",
+      "target": 1,
+      "icon": "mountain"
+    },
+    {
+      "id": "odyssey_moons_7",
+      "name": "Metro Collector",
+      "description": "Record 10 Power Moons in the Metro Kingdom.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_kingdom_8",
+      "name": "Snow Bound",
+      "description": "Unlock the Snow Kingdom.",
+      "target": 1,
+      "icon": "mountain"
+    },
+    {
+      "id": "odyssey_moons_8",
+      "name": "Snow Collector",
+      "description": "Record 10 Power Moons in the Snow Kingdom.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_kingdom_9",
+      "name": "Seaside Bound",
+      "description": "Unlock the Seaside Kingdom.",
+      "target": 1,
+      "icon": "mountain"
+    },
+    {
+      "id": "odyssey_moons_9",
+      "name": "Seaside Collector",
+      "description": "Record 10 Power Moons in the Seaside Kingdom.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_kingdom_10",
+      "name": "Luncheon Bound",
+      "description": "Unlock the Luncheon Kingdom.",
+      "target": 1,
+      "icon": "mountain"
+    },
+    {
+      "id": "odyssey_moons_10",
+      "name": "Luncheon Collector",
+      "description": "Record 10 Power Moons in the Luncheon Kingdom.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_kingdom_11",
+      "name": "Ruined Bound",
+      "description": "Unlock the Ruined Kingdom.",
+      "target": 1,
+      "icon": "mountain"
+    },
+    {
+      "id": "odyssey_kingdom_12",
+      "name": "Bowser’s Bound",
+      "description": "Unlock the Bowser’s Kingdom.",
+      "target": 1,
+      "icon": "mountain"
+    },
+    {
+      "id": "odyssey_moons_12",
+      "name": "Bowser’s Collector",
+      "description": "Record 10 Power Moons in the Bowser’s Kingdom.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_kingdom_13",
+      "name": "Moon Bound",
+      "description": "Unlock the Moon Kingdom.",
+      "target": 1,
+      "icon": "mountain"
+    },
+    {
+      "id": "odyssey_moons_13",
+      "name": "Moon Collector",
+      "description": "Record 10 Power Moons in the Moon Kingdom.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_kingdom_14",
+      "name": "Mushroom Bound",
+      "description": "Unlock the Mushroom Kingdom.",
+      "target": 1,
+      "icon": "mountain"
+    },
+    {
+      "id": "odyssey_moons_14",
+      "name": "Mushroom Collector",
+      "description": "Record 10 Power Moons in the Mushroom Kingdom.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_moons_total_1",
+      "name": "1 Power Moons",
+      "description": "Reach 1 recorded Power Moons across the kingdoms.",
+      "target": 1,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_moons_total_10",
+      "name": "10 Power Moons",
+      "description": "Reach 10 recorded Power Moons across the kingdoms.",
+      "target": 10,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_moons_total_50",
+      "name": "50 Power Moons",
+      "description": "Reach 50 recorded Power Moons across the kingdoms.",
+      "target": 50,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_moons_total_100",
+      "name": "100 Power Moons",
+      "description": "Reach 100 recorded Power Moons across the kingdoms.",
+      "target": 100,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_moons_total_250",
+      "name": "250 Power Moons",
+      "description": "Reach 250 recorded Power Moons across the kingdoms.",
+      "target": 250,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_moons_total_500",
+      "name": "500 Power Moons",
+      "description": "Reach 500 recorded Power Moons across the kingdoms.",
+      "target": 500,
+      "icon": "star"
+    },
+    {
+      "id": "odyssey_moons_total_999",
+      "name": "999 Power Moons",
+      "description": "Reach 999 recorded Power Moons across the kingdoms.",
+      "target": 999,
+      "icon": "star"
+    }
+  ],
+  "rules": {
+    "odyssey_kingdom_0": {
+      "op": "any",
+      "flags": [
+        "kingdom:0"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_0": {
+      "op": "number",
+      "flags": [
+        "moons:0"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_1": {
+      "op": "any",
+      "flags": [
+        "kingdom:1"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_1": {
+      "op": "number",
+      "flags": [
+        "moons:1"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_2": {
+      "op": "any",
+      "flags": [
+        "kingdom:2"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_2": {
+      "op": "number",
+      "flags": [
+        "moons:2"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_3": {
+      "op": "any",
+      "flags": [
+        "kingdom:3"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_3": {
+      "op": "number",
+      "flags": [
+        "moons:3"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_4": {
+      "op": "any",
+      "flags": [
+        "kingdom:4"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_4": {
+      "op": "number",
+      "flags": [
+        "moons:4"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_5": {
+      "op": "any",
+      "flags": [
+        "kingdom:5"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_6": {
+      "op": "any",
+      "flags": [
+        "kingdom:6"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_6": {
+      "op": "number",
+      "flags": [
+        "moons:6"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_7": {
+      "op": "any",
+      "flags": [
+        "kingdom:7"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_7": {
+      "op": "number",
+      "flags": [
+        "moons:7"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_8": {
+      "op": "any",
+      "flags": [
+        "kingdom:8"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_8": {
+      "op": "number",
+      "flags": [
+        "moons:8"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_9": {
+      "op": "any",
+      "flags": [
+        "kingdom:9"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_9": {
+      "op": "number",
+      "flags": [
+        "moons:9"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_10": {
+      "op": "any",
+      "flags": [
+        "kingdom:10"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_10": {
+      "op": "number",
+      "flags": [
+        "moons:10"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_11": {
+      "op": "any",
+      "flags": [
+        "kingdom:11"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_12": {
+      "op": "any",
+      "flags": [
+        "kingdom:12"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_12": {
+      "op": "number",
+      "flags": [
+        "moons:12"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_13": {
+      "op": "any",
+      "flags": [
+        "kingdom:13"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_13": {
+      "op": "number",
+      "flags": [
+        "moons:13"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_kingdom_14": {
+      "op": "any",
+      "flags": [
+        "kingdom:14"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_14": {
+      "op": "number",
+      "flags": [
+        "moons:14"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_total_1": {
+      "op": "number",
+      "flags": [
+        "moons"
+      ],
+      "threshold": 1,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_total_10": {
+      "op": "number",
+      "flags": [
+        "moons"
+      ],
+      "threshold": 10,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_total_50": {
+      "op": "number",
+      "flags": [
+        "moons"
+      ],
+      "threshold": 50,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_total_100": {
+      "op": "number",
+      "flags": [
+        "moons"
+      ],
+      "threshold": 100,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_total_250": {
+      "op": "number",
+      "flags": [
+        "moons"
+      ],
+      "threshold": 250,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_total_500": {
+      "op": "number",
+      "flags": [
+        "moons"
+      ],
+      "threshold": 500,
+      "note": "Detected after the game saves or autosaves."
+    },
+    "odyssey_moons_total_999": {
+      "op": "number",
+      "flags": [
+        "moons"
+      ],
+      "threshold": 999,
+      "note": "Detected after the game saves or autosaves."
+    }
+  }
+}

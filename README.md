@@ -1,6 +1,6 @@
 # Custom Steam Achievements
 
-[Website](https://patryk405.github.io/custom-steam-achievements/) · [Pack library](https://achievement-hub-patryk405.green-ray-4163.chatgpt.site/library) · [Steam account](https://achievement-hub-patryk405.green-ray-4163.chatgpt.site/account)
+[Website](https://patryk405.github.io/custom-steam-achievements/) · [Pack library](https://patryk405.github.io/custom-steam-achievements/?view=library) · [Steam account](https://patryk405.github.io/custom-steam-achievements/?view=account)
 
 This is a developer preview, not a one-click installer. Linux desktop Steam and Millennium are required. Big Picture, Decky, and Windows are not supported by this preview.
 
@@ -30,14 +30,20 @@ This is a developer preview, not a one-click installer. Linux desktop Steam and 
 - `frontend/`, `backend/`, `resources/`: Millennium plugin and built-in catalogs.
 - `tracker/`, `scripts/`: account-scoped trackers and game configuration tools.
 - `tests/`, `docs/`: regression checks and adapter documentation.
-- `website/`: full hosted application, Steam OpenID, cloud API, database schema and migrations. Runtime databases and credentials are not included.
-- `docs-site/`: static GitHub Pages site and sanitized source download. GitHub Pages cannot run the authentication, uploads or cloud API; links open the hosted application.
+- `website/`: archived implementation and shared pack definitions/assets.
+- `web/`: React application published on GitHub Pages.
+- `supabase/`: production Steam OpenID API, cloud synchronization, packs and database schema. Runtime data and credentials are not included.
+- `docs-site/`: static GitHub Pages site and sanitized source download. The library and account interface run on Pages; the Supabase API handles authentication, uploads and cloud progress.
 
 ## GitHub Pages
-Publish `docs-site/` with the Pages workflow. Under repository Settings → Pages select **GitHub Actions**. The workflow uploads only this directory. It never publishes runtime data or backend files.
+Run `npm ci --prefix web`, `npm run typecheck --prefix web`, and `npm run build --prefix web`. Publish `docs-site/` with the Pages workflow. Under repository Settings → Pages select **GitHub Actions**. The workflow uploads only this directory. It never publishes runtime data or backend files.
 
 ## Website development
-From `website/`, install dependencies with `npm ci`, then use `npm run dev`. Production uses Cloudflare Workers and a D1 binding named `DB`; apply the migrations under `website/drizzle/`. Existing hosting metadata refers to the current deployment. Forks must provision their own backend and configure the endpoint in `tracker/cloud.py`.
+Run `npm ci --prefix web`, then `npm run dev --prefix web`. Production authentication accepts only the configured GitHub Pages origin. Set the frontend and API URLs in `web/src/api.ts`, `supabase/functions/achievements/index.ts`, and `tracker/cloud.py` for your own deployment.
+
+Apply `supabase/schema.sql` to a new Supabase database. Deploy the `achievements` Edge Function with platform JWT verification disabled: it verifies Steam assertions and its own hashed browser/device tokens. The service role credential is available only through Supabase runtime environment variables, never in frontend code. All tables have RLS enabled and deny direct browser access.
+
+Browser sessions use sessionStorage and a verifier-bound one-time login exchange. Steam authenticates the user on its own site and returns to GitHub Pages. Sign out revokes the browser token; device access is managed separately in the account panel.
 
 ## Distribution
 The source preview includes an original notification chime. Game files, keys, saves and credentials are not distributed. Third-party notices are in `docs/THIRD-PARTY.md`, `licenses/`, and `website/lib/covers/sources.json`. No blanket license is assigned to third-party game artwork.

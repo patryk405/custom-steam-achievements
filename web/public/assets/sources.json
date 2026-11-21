@@ -1,0 +1,32 @@
+{
+  "botw": {
+    "source": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Breath_of_the_Wild",
+    "image": "https://thumb.wikimedia.org/wikipedia/en/thumb/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg/250px-The_Legend_of_Zelda_Breath_of_the_Wild.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail",
+    "local": "lib/covers/botw.jpg"
+  },
+  "oot": {
+    "source": "https://www.steamgriddb.com/grid/787839",
+    "image": "https://cdn2.steamgriddb.com/grid/8fff7c872b733893a1a891be7c26c18c.png",
+    "local": "lib/covers/oot.png"
+  },
+  "bloodborne": {
+    "source": "https://www.doesitplay.org/game/Bloodborne/ps4/Base%20PS4?region=ESRB&version=Standard",
+    "image": "https://images.igdb.com/igdb/image/upload/t_1080p/co1rba.jpg",
+    "local": "lib/covers/bloodborne.jpg"
+  },
+  "arceus": {
+    "source": "https://www.gamesaver.com.au/game/pokemon-legends-arceus",
+    "image": "https://images.igdb.com/igdb/image/upload/t_1080p/co3d03.png",
+    "local": "lib/covers/arceus.png"
+  },
+  "odyssey": {
+    "source": "https://www.steamgriddb.com/game/5245268",
+    "image": "https://cdn2.steamgriddb.com/grid/505870c8848f2d550944bf64008c9472.png",
+    "local": "lib/covers/odyssey.png"
+  },
+  "pokopia": {
+    "source": "https://backloggd.com/games/pokemon-pokopia/",
+    "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coag5c.jpg",
+    "local": "lib/covers/pokopia.jpg"
+  }
+}

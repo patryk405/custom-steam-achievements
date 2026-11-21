@@ -1,7 +1,7 @@
 from pathlib import Path
 import zipfile,json,io,wave,math,struct,base64,hashlib
 root=Path(__file__).resolve().parents[2]
-out=Path(__file__).resolve().parents[1]/'lib/downloads/custom-steam-achievements-0.4.1-source.zip'
+out=Path(__file__).resolve().parents[1]/'lib/downloads/custom-steam-achievements-0.5.0-source.zip'
 files={}
 for folder in ['frontend','backend','tracker','tests','docs','examples','licenses']:
  for p in (root/folder).rglob('*'):
@@ -23,8 +23,8 @@ with wave.open(buf,'wb') as w:
   samples.append(struct.pack('<h',int(6500*v*envelope)))
  w.writeframes(b''.join(samples))
 files['resources/achievement-sound.json']=json.dumps({'url':'data:audio/wav;base64,'+base64.b64encode(buf.getvalue()).decode()})
-files['millennium.toml']=files['millennium.toml'].replace('version = "0.1.0"','version = "0.4.1"')
-files['README.md']='''# Custom Steam Achievements — developer preview 0.4.1
+files['millennium.toml']=files['millennium.toml'].replace('version = "0.1.0"','version = "0.5.0"')
+files['README.md']='''# Custom Steam Achievements — developer preview 0.5.0
 
 This is a source archive, not a one-click installer. Linux desktop Steam and Millennium are required. Big Picture, Decky, and Windows are not supported by this preview.
 
@@ -56,5 +56,5 @@ with zipfile.ZipFile(out) as z:
  assert z.testzip() is None
  assert not any(str(Path.home()) in z.read(n).decode(errors='ignore') for n in z.namelist())
  assert not any(n.endswith(('prod.keys','state.json','preferences.json')) for n in z.namelist())
-manifest={'version':'0.4.1','kind':'Developer source preview','filename':out.name,'bytes':out.stat().st_size,'sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'fileCount':len(files)}
+manifest={'version':'0.5.0','kind':'Developer source preview','filename':out.name,'bytes':out.stat().st_size,'sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'fileCount':len(files)}
 out.with_name('release.json').write_text(json.dumps(manifest,indent=2));print(json.dumps(manifest))

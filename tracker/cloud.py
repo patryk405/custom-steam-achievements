@@ -1,7 +1,8 @@
 """Steam-account scoped, offline-first cloud synchronization (stdlib only)."""
 import json,os,re,time,threading,urllib.request,urllib.error,platform,tempfile
 from pathlib import Path
-SITE='https://achievement-hub-patryk405.green-ray-4163.chatgpt.site'
+SITE='https://patryk405.github.io/custom-steam-achievements/'
+API='https://wfkgkhkuuxsggxdanvfp.supabase.co/functions/v1/achievements/cloud/'
 ID=re.compile(r'7656119\d{10}')
 
 def read(path,default=None):
@@ -61,9 +62,9 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,*args,**kwargs):return None
 
 def request(path,data,secret=None):
-    headers={'Content-Type':'application/json','Accept':'application/json','User-Agent':'CustomSteamAchievements/0.4.1 (+https://github.com/patryk405/custom-steam-achievements)'}
+    headers={'Content-Type':'application/json','Accept':'application/json','User-Agent':'CustomSteamAchievements/0.5.0 (+https://github.com/patryk405/custom-steam-achievements)'}
     if secret:headers['Authorization']='Bearer '+secret
-    req=urllib.request.Request(SITE+'/api/cloud/'+path,json.dumps(data).encode(),headers)
+    req=urllib.request.Request(API+path,json.dumps(data).encode(),headers)
     with urllib.request.build_opener(NoRedirect).open(req,timeout=10) as res:
         if 'application/json' not in res.headers.get('Content-Type',''):raise ValueError('Cloud website requires access; synchronization is unavailable')
         raw=res.read(1048577)
@@ -110,7 +111,7 @@ class Cloud:
                 (root/'cloud.json').unlink(missing_ok=True);cfg={}
             elif command.get('action')=='connect':
                 response=self.transport('device/start',{'steamId':account,'name':platform.node()[:80] or 'Linux device'})
-                if not re.fullmatch('[a-f0-9]{64}',response.get('token','')) or not response.get('verificationUrl','').startswith(SITE+'/account?device='):raise ValueError('Invalid pairing response')
+                if not re.fullmatch('[a-f0-9]{64}',response.get('token','')) or not response.get('verificationUrl','').startswith(SITE+'?view=account&device='):raise ValueError('Invalid pairing response')
                 cfg={**response,'steamId':account,'paired':False};write(root/'cloud.json',cfg)
         if cfg.get('steamId')!=account:
             write(self.data/'cloud-status.json',status);return
